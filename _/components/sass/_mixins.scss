@@ -1,0 +1,13 @@
+@mixin content-box($width, $height, $bgcolor, $bordercolor)
+{
+    width:$width;
+    height:$height;
+    @include background($bgcolor);
+    border:1px solid $bordercolor;
+}
+
+@mixin content-box-rounded($width, $height, $bgcolor, $bordercolor, $radius)
+{
+    @include content-box($width, $height, $bgcolor, $bordercolor);
+    @include border-radius($radius);
+}

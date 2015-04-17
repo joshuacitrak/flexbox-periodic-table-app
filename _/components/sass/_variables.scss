@@ -1,0 +1,38 @@
+//---------------COLORS----------------------
+$ltgrey:#d3d3d3;
+$mdgrey:#adadad;
+$dkgrey:#6d6d6d;
+$white:#ededed;
+$black:#101010;
+$ltblue:#71abe1;
+$dkblue:#1e2d3c;
+$ltpink:#FFB7B3;
+$dkpink:#E5EAA4;
+$ltgreen:#09B239;
+$dkgreen:#0A3316;
+$ltred:#FF1919;
+$dkred:#7F0D0D;
+$ltyellow:#FFFD61;
+$dkyellow:#FFFC33;
+$ltpurple:#9E4CFF;
+$dkpurple:#340A66;
+$ltorange:#FF812E;
+$dkorange:#FF6600;
+
+//---------------TYPO--------------------------
+@import url(http://fonts.googleapis.com/css?family=Asap:400,700,400italic);
+$font-normal:400;
+$font-bold:700;
+$font-italic:400italic;
+
+//--------------MARGINS/PADDING-------
+$margin-sm-px:24px;
+$margin-sm-rem:2.4rem;//24 ÷ 10 = 2.4rem
+$margin-lg-px:48px;
+$margin-lg-rem:4.8rem;//48÷ 10 = 2.4rem
+
+//--------------STATIC-----------------------
+$box-width:57px; //1026/18 (18 is grid col)
+$box-height:75px; //1080/11 (11 is rows)
+$box-radius:4px;
+

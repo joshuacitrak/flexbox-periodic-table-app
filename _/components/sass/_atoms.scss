@@ -1,0 +1,41 @@
+html
+{
+  font-size:62.5%;
+}
+body
+{
+    font-family:'Asap'!important;
+    font-weight:$font-normal;
+    font-size:16px; /*fallback*/
+    font-size: 1.6rem;
+    line-height: 1.625; /* $line-height-base ÷ $fontbase */
+    color:$dkgrey;
+    @include background($white);
+    overflow-x:hidden;
+}
+h1, h2, h3, h4
+{
+  text-rendering:optimizeLegibility;
+}
+h1,
+h2 {
+    font-size:26px;
+    font-size: 2.6rem; /* 26 ÷ $rembase */
+    line-height: 1; /* $line-height-base ÷ 26 */
+}
+h1{
+    font-weight:$font-bold;
+}
+h3,
+h4 {
+    font-size:18px;
+    font-size: 1.8rem; /* 18 ÷ $rembase */
+    line-height: 1.444 /* $line-height-base ÷ 18 */
+}
+h3{
+    font-weight:$font-bold;
+}
+p{
+    font-size:16px;
+    font-size: 1.6rem; /* 16 ÷ $rembase */
+}

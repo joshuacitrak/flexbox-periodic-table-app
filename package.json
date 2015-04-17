@@ -1,27 +1,27 @@
 {
-  "name": "flexbox-slick-angular-app",
+  "name": "flexbox-periodic-table-app",
   "version": "0.0.1",
-  "description": "A Flexbox-Angular magazine template",
+  "description": "A Flexbox Periodic Table of the Elements",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/joshuacitrak/flexbox-slick-angular-app.git"
+    "url": "https://github.com/joshuacitrak/flexbox-periodic-table-app.git"
   },
   "keywords": [
     "flexbox",
     "angular",
-    "slick",
+    "Chemistry",
     "sass"
   ],
   "author": "joshuacitrak",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joshuacitrak/flexbox-slick-angular-app/issues"
+    "url": "https://github.com/joshuacitrak/flexbox-periodic-table-app/issues"
   },
-  "homepage": "https://github.com/joshuacitrak/flexbox-slick-angular-app",
+  "homepage": "https://github.com/joshuacitrak/flexbox-periodic-table-app",
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-compass": "^2.0.3",

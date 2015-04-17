@@ -1,0 +1,80 @@
+.box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11
+{
+    @include flex(1 0);
+    @include background($white);
+    min-width: 44px; //all boxes should have these min/maxes
+    max-width:75px;
+    min-height: 65px;
+    height: 90px;
+    margin:1px;
+    
+    @include opacity(.85);
+    @include transition(all .35s ease-in-out);
+    
+	 @include transform(perspective(1000px) translate3d(0,0,0));
+    &:hover
+    {
+        @include opacity(1);      
+        @include transform(perspective(1000px) translate3d(0,0,21px));
+        box-shadow: 0 3px 15px rgba(0,0,0,0.4);
+    }
+}
+/*non-metails*/
+.box
+{
+    @include content-box-rounded($box-width, $box-height, $ltorange, $black, $box-radius);
+}
+/*noble gasses*/
+.box1
+{
+    @include content-box($box-width, $box-height, $ltgreen, $ltblue);
+}
+/*alkali metails*/
+.box2
+{
+    @include content-box-rounded($box-width, $box-height, $ltblue, $black, $box-radius);
+}
+/*alkal-earth*/
+.box3
+{
+    @include content-box($box-width, $box-height, $dkblue, $ltblue);
+}
+/*basic-metails*/
+.box4
+{
+    @include content-box-rounded($box-width, $box-height, $dkpurple, $black, $box-radius);
+}
+/*semi-metails*/
+.box5
+{
+    @include content-box($box-width, $box-height, $ltpurple, $ltblue);
+}
+/*halogen*/
+.box6
+{
+    @include content-box-rounded($box-width, $box-height, $dkgreen, $black, $box-radius);
+}
+/*transition-metails*/
+.box7
+{
+    @include content-box($box-width, $box-height, $ltyellow, $ltblue);
+}
+/*lanthanide*/
+.box8
+{
+    @include content-box-rounded($box-width, $box-height, $dkred, $black, $box-radius);
+}
+/*actinide*/
+.box9
+{
+    @include content-box($box-width, $box-height, $dkpink, $ltblue);
+}
+.box10
+{
+    @include content-box-rounded($box-width, $box-height, $ltred, $black, $box-radius);
+}
+/*lan-act-spacers*/
+.box11
+{
+    @include content-box($box-width, $box-height, $ltpink:, $ltblue);
+}

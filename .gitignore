@@ -3,3 +3,6 @@ raw/*
 .sass-cache/*
 node_modules/*
 fonts/*
+bower/*
+bower_components/*
+science-and-technology/*
