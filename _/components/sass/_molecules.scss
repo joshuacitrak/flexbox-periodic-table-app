@@ -2,11 +2,32 @@
 {
     @include flex(1 0);
     @include background($white);
-    min-width: 44px; //all boxes should have these min/maxes
-    max-width:75px;
+    min-width: 36px; //all boxes should have these min/maxes
+    max-width:45px;
     min-height: 65px;
-    height: 90px;
+    @media (min-width:1028px)
+      {
+        min-width: 52px; //all boxes should have these min/maxes
+        max-width:57px;
+        min-height: 75px;
+      }
+@media (min-width:1290px)
+      {
+        min-width: 60px; //all boxes should have these min/maxes
+        max-width:65px;
+        min-height: 80px;
+      }
+    
+@media (min-width:1600px)
+      {
+        min-width: 70px; //all boxes should have these min/maxes
+        max-width:75px;
+        min-height: 85px;
+      }
+    
     margin:1px;
+    
+    cursor:pointer;
     
     @include opacity(.85);
     @include transition(all .35s ease-in-out);
@@ -19,62 +40,63 @@
         box-shadow: 0 3px 15px rgba(0,0,0,0.4);
     }
 }
+
 /*non-metails*/
 .box
 {
-    @include content-box-rounded($box-width, $box-height, $ltorange, $black, $box-radius);
+    @include content-box-rounded($box-width, $box-height, $ltorange, $dkorange, $box-radius);
 }
 /*noble gasses*/
 .box1
 {
-    @include content-box($box-width, $box-height, $ltgreen, $ltblue);
+    @include content-box-rounded($box-width, $box-height, $ltgreen, $dkgreen, $box-radius);
 }
 /*alkali metails*/
 .box2
 {
-    @include content-box-rounded($box-width, $box-height, $ltblue, $black, $box-radius);
+    @include content-box-rounded($box-width, $box-height, $ltblue, $dkblue, $box-radius);
 }
 /*alkal-earth*/
 .box3
 {
-    @include content-box($box-width, $box-height, $dkblue, $ltblue);
+    @include content-box-rounded($box-width, $box-height, $dkblue, $ltblue, $box-radius);
 }
 /*basic-metails*/
 .box4
 {
-    @include content-box-rounded($box-width, $box-height, $dkpurple, $black, $box-radius);
+    @include content-box-rounded($box-width, $box-height, $dkpurple, $ltpurple, $box-radius);
 }
 /*semi-metails*/
 .box5
 {
-    @include content-box($box-width, $box-height, $ltpurple, $ltblue);
+    @include content-box-rounded($box-width, $box-height, $ltpurple, $dkpurple, $box-radius);
 }
 /*halogen*/
 .box6
 {
-    @include content-box-rounded($box-width, $box-height, $dkgreen, $black, $box-radius);
+    @include content-box-rounded($box-width, $box-height, $dkgreen, $ltgreen, $box-radius);
 }
 /*transition-metails*/
 .box7
 {
-    @include content-box($box-width, $box-height, $ltyellow, $ltblue);
+    @include content-box-rounded($box-width, $box-height, $ltyellow, $dkyellow ,$box-radius);
 }
 /*lanthanide*/
 .box8
 {
-    @include content-box-rounded($box-width, $box-height, $dkred, $black, $box-radius);
+    @include content-box-rounded($box-width, $box-height, $dkred, $ltred, $box-radius);
 }
 /*actinide*/
 .box9
 {
-    @include content-box($box-width, $box-height, $dkpink, $ltblue);
+    @include content-box-rounded($box-width, $box-height, $dkpink, $ltpink, $box-radius);
 }
 .box10
 {
-    @include content-box-rounded($box-width, $box-height, $ltred, $black, $box-radius);
+    @include content-box-rounded($box-width, $box-height, $ltred, $dkred, $box-radius);
 }
 /*lan-act-spacers*/
 .box11
 {
-    @include content-box($box-width, $box-height, $ltpink:, $ltblue);
+    @include content-box-rounded($box-width, $box-height, $ltpink, $ltblue, $box-radius);
 }
