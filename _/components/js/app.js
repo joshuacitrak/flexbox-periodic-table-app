@@ -1,0 +1,1 @@
+//https://github.com/diniska/chemistry/blob/master/PeriodicalTable/periodicTable.json 

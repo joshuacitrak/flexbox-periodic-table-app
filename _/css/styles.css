@@ -3076,6 +3076,19 @@ p {
   font-size: 1.6rem;
   /* 16 ÷ $rembase */ }
 
+.flexcontainer {
+  max-width: 768px;
+  position: relative; }
+  @media (min-width: 1028px) {
+    .flexcontainer {
+      max-width: 1028px; } }
+  @media (min-width: 1290px) {
+    .flexcontainer {
+      max-width: 1290px; } }
+  @media (min-width: 1600px) {
+    .flexcontainer {
+      max-width: 1600px; } }
+
 .box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11 {
   -webkit-flex: 1 0;
   flex: 1 0;
@@ -3102,14 +3115,14 @@ p {
       min-height: 75px; } }
   @media (min-width: 1290px) {
     .box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11 {
-      min-width: 60px;
-      max-width: 65px;
+      min-width: 65px;
+      max-width: 70px;
       min-height: 80px; } }
   @media (min-width: 1600px) {
     .box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11 {
-      min-width: 70px;
-      max-width: 75px;
-      min-height: 85px; } }
+      min-width: 77px;
+      max-width: 87px;
+      min-height: 92px; } }
   .box:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover, .box9:hover, .box10:hover, .box11:hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
@@ -3123,8 +3136,8 @@ p {
 .box {
   width: 42px;
   height: 55px;
-  background: #ff812e;
-  border: 1px solid #ff6600;
+  background: #4b946f;
+  border: 1px solid #3a7256;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
@@ -3133,8 +3146,8 @@ p {
 .box1 {
   width: 42px;
   height: 55px;
-  background: #09b239;
-  border: 1px solid #0a3316;
+  background: #71abe1;
+  border: 1px solid #4792d8;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
@@ -3143,8 +3156,8 @@ p {
 .box2 {
   width: 42px;
   height: 55px;
-  background: #71abe1;
-  border: 1px solid #1e2d3c;
+  background: #7f0d0d;
+  border: 1px solid #510808;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
@@ -3153,8 +3166,8 @@ p {
 .box3 {
   width: 42px;
   height: 55px;
-  background: #1e2d3c;
-  border: 1px solid #71abe1;
+  background: #a6726c;
+  border: 1px solid #8b5a54;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
@@ -3164,7 +3177,7 @@ p {
   width: 42px;
   height: 55px;
   background: #340a66;
-  border: 1px solid #9e4cff;
+  border: 1px solid #1c0538;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
@@ -3174,7 +3187,7 @@ p {
   width: 42px;
   height: 55px;
   background: #9e4cff;
-  border: 1px solid #340a66;
+  border: 1px solid #8219ff;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
@@ -3184,7 +3197,7 @@ p {
   width: 42px;
   height: 55px;
   background: #0a3316;
-  border: 1px solid #09b239;
+  border: 1px solid #020804;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
@@ -3194,7 +3207,7 @@ p {
   width: 42px;
   height: 55px;
   background: #fffd61;
-  border: 1px solid #fffc33;
+  border: 1px solid #fffc2e;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
@@ -3203,8 +3216,8 @@ p {
 .box8 {
   width: 42px;
   height: 55px;
-  background: #7f0d0d;
-  border: 1px solid #ff1919;
+  background: #ff1919;
+  border: 1px solid #e50000;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
@@ -3214,16 +3227,17 @@ p {
   width: 42px;
   height: 55px;
   background: #e5eaa4;
-  border: 1px solid #ffb7b3;
+  border: 1px solid #d9e07b;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
 
+/*metaliods*/
 .box10 {
   width: 42px;
   height: 55px;
-  background: #ff1919;
-  border: 1px solid #7f0d0d;
+  background: #09b239;
+  border: 1px solid #078129;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
@@ -3233,16 +3247,38 @@ p {
   width: 42px;
   height: 55px;
   background: #ffb7b3;
-  border: 1px solid #71abe1;
+  border: 1px solid #ff8780;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px; }
 
 .flexcontainer {
   display: block;
-  max-width: 1680px;
   margin: 48px 24px;
   margin: 4.8rem 2.4rem; }
+  @media (min-width: 1028px) {
+    .flexcontainer {
+      margin: 48px 48px;
+      margin: 4.8rem 4.8rem; } }
+
+.flexcol, .flexrow {
+  position: relative; }
+
+.flexcol {
+  -webkit-flex: 1 0;
+  flex: 1 0;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  display: -ms-flexbox;
+  -ms-flex-direction: column;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
 
 .flexrow {
   -webkit-flex: 1 0;
@@ -3259,6 +3295,25 @@ p {
   flex-direction: row;
   -webkit-flex-wrap: nowrap;
   flex-wrap: nowrap; }
+  .flexrow h4 {
+    display: block;
+    position: absolute;
+    top: 40%;
+    font-weight: 700; }
+  .flexrow .row-label {
+    left: -17px; }
+    @media (min-width: 1028px) {
+      .flexrow .row-label {
+        left: -22px; } }
+  .flexrow .col-label-wrapper {
+    position: absolute;
+    top: -44px; }
+  .flexrow .col-label {
+    position: relative;
+    font-size: 9px;
+    font-size: .9rem;
+    padding: 3px 3px 3px 17px;
+    line-height: .3; }
 
 .box-wrapper-start {
   -webkit-flex: 1 0;

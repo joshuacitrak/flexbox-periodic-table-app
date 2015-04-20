@@ -1,9 +1,36 @@
 .flexcontainer
 {
     display:block;
-    max-width:1680px;
     margin:$margin-lg-px $margin-sm-px;
     margin:$margin-lg-rem $margin-sm-rem;
+    @media (min-width:1028px)
+      {
+        margin:$margin-lg-px $margin-lg-px;
+        margin:$margin-lg-rem $margin-lg-rem;
+      }
+}
+
+.flexcol, .flexrow
+{
+    position: relative;
+}
+
+.flexcol
+{
+    @include flex(1 0);
+    @include flexbox((
+    display: box,
+    box-orient: vertical,
+  ), $version: 1);
+  @include flexbox((
+    display: flexbox,
+    flex-direction: column
+  ), $version: 2);
+  @include flexbox((
+    display: flex,
+    flex-direction: column
+  ));
+    @include flex-wrap(nowrap);
 }
 
 .flexrow
@@ -22,6 +49,38 @@
     flex-direction: row
   ));
     @include flex-wrap(nowrap);
+    
+    h4
+    {
+        display: block;
+        position: absolute;
+        top: 40%;
+        font-weight: $font-bold;
+    }
+    
+    .row-label
+    {
+        left: -17px;
+        @media (min-width:1028px)
+      {
+        left: -22px;
+      }
+    }
+    
+    .col-label-wrapper
+    {
+        position: absolute;
+        top: -44px;
+    }
+    
+    .col-label
+    {
+        position:relative;
+        font-size: 9px;
+        font-size: .9rem;
+        padding: 3px 3px 3px 17px;
+         line-height: .3;
+    }
 }
 
 .box-wrapper-start
