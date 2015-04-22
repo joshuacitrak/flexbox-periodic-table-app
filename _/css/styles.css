@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Asap:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Asap:400,700,400italic|Roboto+Slab:400,700);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -3036,7 +3036,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Asap" !important;
+  font-family: 'Asap', sans-serif;
   font-weight: 400;
   font-size: 16px;
   /*fallback*/
@@ -3048,6 +3048,7 @@ body {
   overflow-x: hidden; }
 
 h1, h2, h3, h4 {
+  font-family: 'Roboto Slab', serif;
   text-rendering: optimizeLegibility; }
 
 h1,
@@ -3072,13 +3073,52 @@ h3 {
   font-weight: 700; }
 
 p {
+  font-family: 'Asap', sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
   /* 16 ÷ $rembase */ }
 
+header {
+  position: relative; }
+
+header {
+  margin: 48px 24px;
+  margin: 4.8rem 2.4rem; }
+  @media (min-width: 1028px) {
+    header {
+      margin: 48px 48px;
+      margin: 4.8rem 4.8rem; } }
+  header .title {
+    font-size: 30px;
+    font-size: 3rem;
+    text-align: center; }
+  header .logo {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: -12px;
+    left: 10%; }
+    @media (min-width: 910px) {
+      header .logo {
+        left: 15%; } }
+    @media (min-width: 1028px) {
+      header .logo {
+        left: 20%;
+        height: 55px;
+        width: 55px; } }
+    @media (min-width: 1290px) {
+      header .logo {
+        left: 25%; } }
+    @media (min-width: 1600px) {
+      header .logo {
+        left: 30%; } }
+
 .flexcontainer {
   max-width: 768px;
   position: relative; }
+  @media (min-width: 910px) {
+    .flexcontainer {
+      max-width: 910px; } }
   @media (min-width: 1028px) {
     .flexcontainer {
       max-width: 1028px; } }
@@ -3108,6 +3148,11 @@ p {
   -ms-transform: perspective(1000px) translate3d(0, 0, 0);
   -webkit-transform: perspective(1000px) translate3d(0, 0, 0);
   transform: perspective(1000px) translate3d(0, 0, 0); }
+  @media (min-width: 910px) {
+    .box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11 {
+      min-width: 46px;
+      max-width: 48px;
+      min-height: 70px; } }
   @media (min-width: 1028px) {
     .box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11 {
       min-width: 52px;
@@ -3252,6 +3297,31 @@ p {
   -webkit-border-radius: 4px;
   border-radius: 4px; }
 
+.legend-box {
+  min-width: 54px;
+  max-width: 67.5px;
+  min-height: 97.5px; }
+  @media (min-width: 910px) {
+    .legend-box {
+      min-width: 69px;
+      max-width: 72px;
+      min-height: 105px; } }
+  @media (min-width: 1028px) {
+    .legend-box {
+      min-width: 78px;
+      max-width: 85.5px;
+      min-height: 112.5px; } }
+  @media (min-width: 1290px) {
+    .legend-box {
+      min-width: 97.5px;
+      max-width: 105px;
+      min-height: 120px; } }
+  @media (min-width: 1600px) {
+    .legend-box {
+      min-width: 115.5px;
+      max-width: 130.5px;
+      min-height: 138px; } }
+
 .flexcontainer {
   display: block;
   margin: 48px 24px;
@@ -3350,6 +3420,11 @@ p {
   flex-wrap: nowrap;
   -webkit-justify-content: flex-end;
   justify-content: flex-end; }
+
+.legend {
+  position: relative; }
+  .legend .legend-wrapper {
+    position: absolute; }
 
 /**
 hover effect remove

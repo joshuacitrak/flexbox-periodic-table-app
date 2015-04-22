@@ -26,7 +26,7 @@ $ltbrownred:#943E34;
 $dkbrownred:#A6726C;
 
 //---------------TYPO--------------------------
-@import url(http://fonts.googleapis.com/css?family=Asap:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Asap:400,700,400italic|Roboto+Slab:400,700);
 $font-normal:400;
 $font-bold:700;
 $font-italic:400italic;
@@ -41,4 +41,25 @@ $margin-lg-rem:4.8rem;//48÷ 10 = 2.4rem
 $box-width:42px; //768/18 (18 is grid col)
 $box-height:55px; //768/11 (11 is rows)
 $box-radius:4px;
+$box-min-width-xs:36px;
+$box-max-width-xs:45px;
+$box-min-height-xs:65px;
+$box-min-width-sm:46px;
+$box-max-width-sm:48px;
+$box-min-height-sm:70px;
+$box-min-width-md:52px;
+$box-max-width-md:57px;
+$box-min-height-md:75px;
+$box-min-width-lg:65px;
+$box-max-width-lg:70px;
+$box-min-height-lg:80px;
+$box-min-width-xl:77px;
+$box-max-width-xl:87px;
+$box-min-height-xl:92px;
 
+//-----------------SCREENS------------------
+$screen-xs:768px;
+$screen-sm:910px;
+$screen-md:1028px;
+$screen-lg:1290px;
+$screen-xl:1600px;

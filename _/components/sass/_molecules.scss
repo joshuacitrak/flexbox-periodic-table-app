@@ -1,19 +1,74 @@
+header
+{
+    margin:$margin-lg-px $margin-sm-px;
+    margin:$margin-lg-rem $margin-sm-rem;
+    @media (min-width:$screen-md)
+      {
+        margin:$margin-lg-px $margin-lg-px;
+        margin:$margin-lg-rem $margin-lg-rem;
+      }
+    .title
+    {
+        font-size:30px;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+     .logo
+    {
+        height:45px;
+        width:45px;
+        position:absolute;
+        top: -12px;
+        left: 10%;
+         @media (min-width:$screen-sm)
+          {
+             left: 15%;
+          }
+         @media (min-width:$screen-md)
+          {
+             left: 20%;
+              height:55px;
+              width:55px;
+          }
+        @media (min-width:$screen-lg
+       )
+          {
+             left: 25%;
+          }
+        @media (min-width:$screen-xl)
+          {
+             left: 30%;
+          }
+    }//logo
+}
+
+.legend
+{
+
+}
+
 .flexcontainer
 {
    max-width:768px;
     position:relative;
-     @media (min-width:1028px)
+     @media (min-width:$screen-sm)
       {
-        max-width:1028px;
+        max-width:$screen-sm;
       }
-@media (min-width:1290px)
+     @media (min-width:$screen-md)
       {
-        max-width:1290px;
+        max-width:$screen-md;
+      }
+@media (min-width:$screen-lg)
+      {
+        max-width:$screen-lg
+           ;
       }
     
-@media (min-width:1600px)
+@media (min-width:$screen-xl)
       {
-        max-width:1600px;
+        max-width:$screen-xl;
       }
 }
 
@@ -21,27 +76,33 @@
 {
     @include flex(1 0);
     @include background($white);
-    min-width: 36px; //all boxes should have these min/maxes
-    max-width:45px;
-    min-height: 65px;
-    @media (min-width:1028px)
+    min-width: $box-min-width-xs; //all boxes should have these min/maxes
+    max-width:$box-max-width-xs;
+    min-height: $box-min-height-xs;
+    @media (min-width:$screen-sm)
       {
-        min-width: 52px; //all boxes should have these min/maxes
-        max-width:57px;
-        min-height: 75px;
+        min-width: $box-min-width-sm; //all boxes should have these min/maxes
+        max-width:$box-max-width-sm;
+        min-height: $box-min-height-sm;
       }
-@media (min-width:1290px)
+    @media (min-width:$screen-md)
       {
-        min-width: 65px; //all boxes should have these min/maxes
-        max-width:70px;
-        min-height: 80px;
+        min-width: $box-min-width-md; //all boxes should have these min/maxes
+        max-width:$box-max-width-md;
+        min-height: $box-min-height-md;
+      }
+@media (min-width:$screen-lg)
+      {
+        min-width: $box-min-width-lg; //all boxes should have these min/maxes
+        max-width:$box-max-width-lg;
+        min-height: $box-min-height-lg;
       }
     
-@media (min-width:1600px)
+@media (min-width:$screen-xl)
       {
-        min-width: 77px; //all boxes should have these min/maxes
-        max-width:87px;
-        min-height: 92px;
+        min-width: $box-min-width-xl; //all boxes should have these min/maxes
+        max-width:$box-max-width-xl;
+        min-height: $box-min-height-xl;
       }
     
     margin:1px;
@@ -119,4 +180,36 @@
 .box11
 {
     @include content-box-rounded($box-width, $box-height, $ltpink, darken($ltpink, 10), $box-radius);
+}
+
+.legend-box
+{
+    min-width: $box-min-width-xs*1.5; //all boxes should have these min/maxes
+    max-width:$box-max-width-xs*1.5;
+    min-height: $box-min-height-xs*1.5;
+    @media (min-width:$screen-sm)
+      {
+        min-width: $box-min-width-sm*1.5; //all boxes should have these min/maxes
+        max-width:$box-max-width-sm*1.5;
+        min-height: $box-min-height-sm*1.5;
+      }
+    @media (min-width:$screen-md)
+      {
+        min-width: $box-min-width-md*1.5; //all boxes should have these min/maxes
+        max-width:$box-max-width-md*1.5;
+        min-height: $box-min-height-md*1.5;
+      }
+@media (min-width:$screen-lg)
+      {
+        min-width: $box-min-width-lg*1.5; //all boxes should have these min/maxes
+        max-width:$box-max-width-lg*1.5;
+        min-height: $box-min-height-lg*1.5;
+      }
+    
+@media (min-width:$screen-xl)
+      {
+        min-width: $box-min-width-xl*1.5; //all boxes should have these min/maxes
+        max-width:$box-max-width-xl*1.5;
+        min-height: $box-min-height-xl*1.5;
+      }
 }

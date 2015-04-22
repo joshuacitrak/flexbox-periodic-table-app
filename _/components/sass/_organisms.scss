@@ -121,6 +121,16 @@
     @include justify-content(flex-end);
 }
 
+.legend
+{
+    position:relative;
+    .legend-wrapper
+    {
+        position:absolute;
+    }
+}
+
+
 /**
 hover effect remove
 **/
