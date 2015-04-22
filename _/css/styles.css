@@ -3297,27 +3297,27 @@ header {
   -webkit-border-radius: 4px;
   border-radius: 4px; }
 
-.legend-box {
+.focus-box {
   min-width: 54px;
   max-width: 67.5px;
   min-height: 97.5px; }
   @media (min-width: 910px) {
-    .legend-box {
+    .focus-box {
       min-width: 69px;
       max-width: 72px;
       min-height: 105px; } }
   @media (min-width: 1028px) {
-    .legend-box {
+    .focus-box {
       min-width: 78px;
       max-width: 85.5px;
       min-height: 112.5px; } }
   @media (min-width: 1290px) {
-    .legend-box {
+    .focus-box {
       min-width: 97.5px;
       max-width: 105px;
       min-height: 120px; } }
   @media (min-width: 1600px) {
-    .legend-box {
+    .focus-box {
       min-width: 115.5px;
       max-width: 130.5px;
       min-height: 138px; } }
@@ -3421,10 +3421,13 @@ header {
   -webkit-justify-content: flex-end;
   justify-content: flex-end; }
 
-.legend {
+.focus {
   position: relative; }
-  .legend .legend-wrapper {
-    position: absolute; }
+  .focus .focus-wrapper {
+    position: absolute;
+    top: 5%;
+    left: 17%;
+    z-index: 32; }
 
 /**
 hover effect remove

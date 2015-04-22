@@ -121,12 +121,15 @@
     @include justify-content(flex-end);
 }
 
-.legend
+.focus
 {
     position:relative;
-    .legend-wrapper
+    .focus-wrapper
     {
         position:absolute;
+        top:5%;
+        left:17%;
+        z-index:32;
     }
 }
 

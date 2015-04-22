@@ -182,7 +182,7 @@ header
     @include content-box-rounded($box-width, $box-height, $ltpink, darken($ltpink, 10), $box-radius);
 }
 
-.legend-box
+.focus-box
 {
     min-width: $box-min-width-xs*1.5; //all boxes should have these min/maxes
     max-width:$box-max-width-xs*1.5;
