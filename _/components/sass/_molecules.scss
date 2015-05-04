@@ -213,3 +213,19 @@ header
         min-height: $box-min-height-xl*1.5;
       }
 }
+
+.table-grid
+{
+ @include grid-column(
+    // Control the number of columns
+    $columns:18,
+    // Specify whether or not this is the last column in the row
+    $last-column:true,
+    // Choose whether or not to center this column
+    $center:true,
+    // Set to true to remove column padding
+    $collapse:true,
+    // Specify the float direction
+    $float:right
+  );   
+}

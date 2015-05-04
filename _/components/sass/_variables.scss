@@ -1,3 +1,11 @@
+//---------------SUSY--------------------------
+$susy:(
+    columns:16,
+    gutters:0,
+    global-box-sizing:border-box,
+    debug: (image:show)
+    );
+
 //---------------COLORS----------------------
 $ltgrey:#d3d3d3;
 $mdgrey:#adadad;
@@ -63,3 +71,9 @@ $screen-sm:910px;
 $screen-md:1028px;
 $screen-lg:1290px;
 $screen-xl:1600px;
+
+
+//---------------GRID-----------------------
+$row-width: rem-calc(1000);
+$column-gutter: rem-calc(2);
+$total-columns: 18 ;

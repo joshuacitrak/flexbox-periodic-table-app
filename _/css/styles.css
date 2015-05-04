@@ -3032,10 +3032,8 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
-html {
-  font-size: 62.5%; }
-
 body {
+  font-size: 62.5%;
   font-family: 'Asap', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -3321,6 +3319,16 @@ header {
       min-width: 115.5px;
       max-width: 130.5px;
       min-height: 138px; } }
+
+.table-grid {
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  float: right;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  float: none; }
 
 .flexcontainer {
   display: block;
