@@ -1,3 +1,117 @@
+header
+{
+    margin:$margin-lg-px $margin-sm-px;
+    margin:$margin-lg-rem $margin-sm-rem;
+    @media (min-width:$screen-md)
+      {
+        margin:$margin-lg-px $margin-lg-px;
+        margin:$margin-lg-rem $margin-lg-rem;
+      }
+    .title
+    {
+        font-size:30px;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+     .logo
+    {
+        height:45px;
+        width:45px;
+        position:absolute;
+        top: -12px;
+        left: 10%;
+         @media (min-width:$screen-sm)
+          {
+             left: 15%;
+          }
+         @media (min-width:$screen-md)
+          {
+             left: 20%;
+              height:55px;
+              width:55px;
+          }
+        @media (min-width:$screen-lg
+       )
+          {
+             left: 25%;
+          }
+        @media (min-width:$screen-xl)
+          {
+             left: 30%;
+          }
+    }//logo
+}
+
+.legend
+{
+
+}
+
+.pt-wrapper
+{
+    position:relative;
+     display:block;
+    margin:$margin-lg-px $margin-sm-px;
+    margin:$margin-lg-rem $margin-sm-rem;
+    @media (min-width:1028px)
+      {
+        margin:$margin-lg-px $margin-lg-px;
+        margin:$margin-lg-rem $margin-lg-rem;
+      }
+    .pt-content
+    {
+        h4
+        {
+            display: block;
+            position: absolute;
+            top: 40%;
+            font-weight: $font-bold;
+        }
+
+        .row-label
+        {
+            left: -17px;
+            @media (min-width:1028px)
+          {
+            left: -22px;
+          }
+        }
+
+        .col-label-wrapper
+        {
+            position: absolute;
+            top: -44px;
+        }
+
+        .col-label
+        {
+            position:relative;
+            font-size: 9px;
+            font-size: .9rem;
+            padding: 3px 3px 3px 17px;
+             line-height: .3;
+        }
+     @include container();   
+    @media (min-width:$screen-sm)
+      {
+        @include container($screen-sm);
+      }
+     @media (min-width:$screen-md)
+      {
+          @include container($screen-md);
+      }
+    @media (min-width:$screen-lg)
+      {
+          @include container($screen-lg);
+      }
+        @media (min-width:$screen-xl)
+      {
+          @include container($screen-xl);
+      }
+    }//pt-content
+}
+
 .flexcontainer
 {
     display:block;

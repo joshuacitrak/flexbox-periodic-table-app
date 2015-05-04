@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 var compass = require('gulp-compass');
 var imageop = require('gulp-image-optimization');
 var uglify = require('gulp-uglify');

@@ -1,7 +1,9 @@
 //---------------SUSY--------------------------
 $susy:(
-    columns:16,
+    columns:18,
     gutters:0,
+    container: 768px,
+    gutter-position: split,
     global-box-sizing:border-box,
     debug: (image:show)
     );

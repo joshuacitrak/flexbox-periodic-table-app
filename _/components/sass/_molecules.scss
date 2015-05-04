@@ -1,51 +1,120 @@
-header
+.span1, .span1-last
 {
-    margin:$margin-lg-px $margin-sm-px;
-    margin:$margin-lg-rem $margin-sm-rem;
-    @media (min-width:$screen-md)
-      {
-        margin:$margin-lg-px $margin-lg-px;
-        margin:$margin-lg-rem $margin-lg-rem;
-      }
-    .title
-    {
-        font-size:30px;
-        font-size: 3rem;
-        text-align: center;
-    }
-
-     .logo
-    {
-        height:45px;
-        width:45px;
-        position:absolute;
-        top: -12px;
-        left: 10%;
-         @media (min-width:$screen-sm)
-          {
-             left: 15%;
-          }
-         @media (min-width:$screen-md)
-          {
-             left: 20%;
-              height:55px;
-              width:55px;
-          }
-        @media (min-width:$screen-lg
-       )
-          {
-             left: 25%;
-          }
-        @media (min-width:$screen-xl)
-          {
-             left: 30%;
-          }
-    }//logo
+    height:$box-height;
+    position: relative;
 }
 
-.legend
+.span1
 {
+    @include span(1 of 18);
+}
 
+.span1-last
+{
+    @include span(1 of 18 last);
+}
+
+.push10
+{
+    margin-left: span(10 of 18);
+}
+
+.pt-box
+{
+    @include content-box-rounded(span(1 0f 18), 100%, $white, $white, $box-radius);
+    @include gutters(.16em inside);//instead of margin
+     //margin:1px;
+    cursor:pointer;
+    
+    @include opacity(.85);
+    @include transition(all .35s ease-in-out);
+    
+	 @include transform(perspective(1000px) translate3d(0,0,0));
+    &:hover
+    {
+        @include opacity(1);      
+        @include transform(perspective(1000px) translate3d(0,0,21px));
+        box-shadow: 0 3px 15px rgba(0,0,0,0.4);
+    }
+    
+     min-height: $box-min-height-xs;
+    @media (min-width:$screen-sm)
+      {
+        min-height: $box-min-height-sm;
+      }
+    @media (min-width:$screen-md)
+      {
+        min-height: $box-min-height-md;
+      }
+@media (min-width:$screen-lg)
+      {
+        min-height: $box-min-height-lg;
+      }
+    
+@media (min-width:$screen-xl)
+      {
+        min-height: $box-min-height-xl;
+      }
+}
+
+.pt-box-1 /*non-metails*/
+{
+    @include content-box-rounded(span(1 0f 18), 100%, $dkgreenyellow, darken($dkgreenyellow,10), $box-radius);
+}
+
+.pt-box-2 /*noble gasses*/
+{
+    @include content-box-rounded(span(1 0f 18), 100%, $ltblue, darken($ltblue,10), $box-radius);
+}
+
+.pt-box-3 /*alkalia metals*/
+{
+    @include content-box-rounded(span(1 0f 18), 100%, $dkred, darken($dkred,10), $box-radius);
+}
+
+.pt-box-4 /*akalai earth*/
+{
+    @include content-box-rounded(span(1 0f 18), 100%, $dkbrownred, darken($dkbrownred,10), $box-radius);
+}
+
+.pt-box-5 /*basic metals*/
+{
+    @include content-box-rounded(span(1 0f 18), 100%, $dkpurple, darken($dkpurple,10), $box-radius);
+}
+
+.pt-box-6 /*semi-metals*/
+{
+    @include content-box-rounded(span(1 0f 18), 100%, $ltpurple, darken($ltpurple,10), $box-radius);
+}
+
+.pt-box-7 /*halogens*/
+{
+    @include content-box-rounded(span(1 0f 18), 100%, $dkgreen, darken($dkgreen, 10), $box-radius);
+}
+
+.pt-box-8 /*transtion*/
+{
+    @include content-box-rounded(span(1 0f 18), 100%, $ltyellow, darken($ltyellow, 10) ,$box-radius);
+}
+
+.pt-box-9 /*lanathide*/
+{
+    @include content-box-rounded(span(1 0f 18), 100%, $ltred, darken($ltred, 10), $box-radius);   
+}
+
+.pt-box-10 /*actinide*/
+{
+    @include content-box-rounded(span(1 0f 18), 100%, $dkpink, darken($dkpink, 10), $box-radius);
+}
+
+.pt-box-11 /*lanathide actinide spacer*/
+{
+    @include content-box-rounded(span(1 0f 18), 100%, $ltpink, darken($ltpink, 10), $box-radius);
+}
+
+.pt-box-12 /*metaloids*/
+{
+    @include content-box-rounded(span(1 0f 18), 100%, $ltgreen, darken($ltgreen, 10), $box-radius); 
 }
 
 .flexcontainer
@@ -60,10 +129,9 @@ header
       {
         max-width:$screen-md;
       }
-@media (min-width:$screen-lg)
+    @media (min-width:$screen-lg)
       {
-        max-width:$screen-lg
-           ;
+        max-width:$screen-lg;
       }
     
 @media (min-width:$screen-xl)
@@ -181,6 +249,11 @@ header
 {
     @include content-box-rounded($box-width, $box-height, $ltpink, darken($ltpink, 10), $box-radius);
 }
+/*lan-act-spacers*/
+.box12
+{
+    @include content-box-rounded(100%, 100%, $ltpink, darken($ltpink, 10), $box-radius);
+}
 
 .focus-box
 {
@@ -214,18 +287,3 @@ header
       }
 }
 
-.table-grid
-{
- @include grid-column(
-    // Control the number of columns
-    $columns:18,
-    // Specify whether or not this is the last column in the row
-    $last-column:true,
-    // Choose whether or not to center this column
-    $center:true,
-    // Set to true to remove column padding
-    $collapse:true,
-    // Specify the float direction
-    $float:right
-  );   
-}
