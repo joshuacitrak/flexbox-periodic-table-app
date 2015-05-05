@@ -14,6 +14,10 @@
     @include span(1 of 18 last);
 }
 
+.push3
+{
+    margin-left: span(3 of 18);
+}
 .push10
 {
     margin-left: span(10 of 18);
@@ -21,8 +25,7 @@
 
 .pt-box
 {
-    @include content-box-rounded(span(1 0f 18), 100%, $white, $white, $box-radius);
-    @include gutters(.16em inside);//instead of margin
+    @include content-box-rounded(span(1 of 18), 100%, $white, $white, $box-radius);
      //margin:1px;
     cursor:pointer;
     
@@ -59,62 +62,62 @@
 
 .pt-box-1 /*non-metails*/
 {
-    @include content-box-rounded(span(1 0f 18), 100%, $dkgreenyellow, darken($dkgreenyellow,10), $box-radius);
+    @include content-box-rounded(span(1 of 18), 100%, $dkgreenyellow, darken($dkgreenyellow,10), $box-radius);
 }
 
 .pt-box-2 /*noble gasses*/
 {
-    @include content-box-rounded(span(1 0f 18), 100%, $ltblue, darken($ltblue,10), $box-radius);
+    @include content-box-rounded(span(1 of 18), 100%, $ltblue, darken($ltblue,10), $box-radius);
 }
 
 .pt-box-3 /*alkalia metals*/
 {
-    @include content-box-rounded(span(1 0f 18), 100%, $dkred, darken($dkred,10), $box-radius);
+    @include content-box-rounded(span(1 of 18), 100%, $dkred, darken($dkred,10), $box-radius);
 }
 
 .pt-box-4 /*akalai earth*/
 {
-    @include content-box-rounded(span(1 0f 18), 100%, $dkbrownred, darken($dkbrownred,10), $box-radius);
+    @include content-box-rounded(span(1 of 18), 100%, $dkbrownred, darken($dkbrownred,10), $box-radius);
 }
 
 .pt-box-5 /*basic metals*/
 {
-    @include content-box-rounded(span(1 0f 18), 100%, $dkpurple, darken($dkpurple,10), $box-radius);
+    @include content-box-rounded(span(1 of 18), 100%, $dkblue, darken($dkblue,10), $box-radius);
 }
 
 .pt-box-6 /*semi-metals*/
 {
-    @include content-box-rounded(span(1 0f 18), 100%, $ltpurple, darken($ltpurple,10), $box-radius);
+    @include content-box-rounded(span(1 of 18), 100%, $ltgreen, darken($ltgreen, 10) ,$box-radius);
 }
 
 .pt-box-7 /*halogens*/
 {
-    @include content-box-rounded(span(1 0f 18), 100%, $dkgreen, darken($dkgreen, 10), $box-radius);
+    @include content-box-rounded(span(1 of 18), 100%, $dkgreen, darken($dkgreen, 10), $box-radius);
 }
 
 .pt-box-8 /*transtion*/
 {
-    @include content-box-rounded(span(1 0f 18), 100%, $ltyellow, darken($ltyellow, 10) ,$box-radius);
+     @include content-box-rounded(span(1 of 18), 100%, $dkpink, darken($dkpink, 10), $box-radius);
 }
 
 .pt-box-9 /*lanathide*/
 {
-    @include content-box-rounded(span(1 0f 18), 100%, $ltred, darken($ltred, 10), $box-radius);   
+   @include content-box-rounded(span(1 of 18), 100%, $ltpink, darken($ltpink, 10), $box-radius);
 }
 
 .pt-box-10 /*actinide*/
 {
-    @include content-box-rounded(span(1 0f 18), 100%, $dkpink, darken($dkpink, 10), $box-radius);
+    @include content-box-rounded(span(1 of 18), 100%, $ltorange, darken($ltorange,10), $box-radius);
 }
 
 .pt-box-11 /*lanathide actinide spacer*/
 {
-    @include content-box-rounded(span(1 0f 18), 100%, $ltpink, darken($ltpink, 10), $box-radius);
+    @include content-box-rounded(span(1 of 18), 100%, $ltpink, darken($ltpink, 10), $box-radius);
 }
 
 .pt-box-12 /*metaloids*/
 {
-    @include content-box-rounded(span(1 0f 18), 100%, $ltgreen, darken($ltgreen, 10), $box-radius); 
+    @include content-box-rounded(span(1 of 18), 100%, $ltgreen, darken($ltgreen, 10), $box-radius); 
 }
 
 .flexcontainer
@@ -253,6 +256,12 @@
 .box12
 {
     @include content-box-rounded(100%, 100%, $ltpink, darken($ltpink, 10), $box-radius);
+}
+
+.divider
+{
+    border: none;
+    margin:$margin-sm-px 0;
 }
 
 .focus-box

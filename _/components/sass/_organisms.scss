@@ -65,7 +65,6 @@ header
         {
             display: block;
             position: absolute;
-            top: 40%;
             font-weight: $font-bold;
         }
 
@@ -92,6 +91,38 @@ header
             padding: 3px 3px 3px 17px;
              line-height: .3;
         }
+        
+        .name-label-wrapper
+        {
+            margin: 0 auto;
+            text-align: center;
+            .name, .weight
+            {
+                line-height: .8;
+            }
+            .name
+            {
+                font-style: italic;
+                font-size: 8px;
+                font-size: .8rem;
+            }
+            .weight
+            {
+                font-size: 8px;
+                font-size: .8rem;
+            }
+        }//name label wrapper
+        
+        .number-label-wrapper
+        {
+            position:absolute;
+            top:0;
+            left:0;
+            .number
+            {
+                 line-height: .8;
+            }
+        }//number lable wrapper
      @include container();   
     @media (min-width:$screen-sm)
       {
@@ -110,7 +141,7 @@ header
           @include container($screen-xl);
       }
     }//pt-content
-}
+}//pt-wrapper
 
 .flexcontainer
 {

@@ -5,17 +5,18 @@ $susy:(
     container: 768px,
     gutter-position: split,
     global-box-sizing:border-box,
-    debug: (image:show)
+    debug: (image:hide)
     );
+@include border-box-sizing;
 
 //---------------COLORS----------------------
 $ltgrey:#d3d3d3;
-$mdgrey:#adadad;
-$dkgrey:#6d6d6d;
+$mdgrey:#6d6d6d;
+$dkgrey:#232323;
 $white:#ededed;
 $black:#101010;
 $ltblue:#71abe1;
-$dkblue:#1e2d3c;
+$dkblue:#5784AE;
 $ltpink:#FFB7B3;
 $dkpink:#E5EAA4;
 $ltgreen:#09B239;
@@ -73,9 +74,3 @@ $screen-sm:910px;
 $screen-md:1028px;
 $screen-lg:1290px;
 $screen-xl:1600px;
-
-
-//---------------GRID-----------------------
-$row-width: rem-calc(1000);
-$column-gutter: rem-calc(2);
-$total-columns: 18 ;
