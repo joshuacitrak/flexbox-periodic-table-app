@@ -92,6 +92,14 @@ header
              line-height: .3;
         }
         
+        .symbol-label-wrapper
+        {
+            .symbol
+            {
+                 @include transition(all .35s ease-in-out);
+            }
+        }//symbol-balel-wrapper
+        
         .name-label-wrapper
         {
             margin: 0 auto;
@@ -99,6 +107,7 @@ header
             .name, .weight
             {
                 line-height: .8;
+                @include transition(all .35s ease-in-out);
             }
             .name
             {
@@ -121,6 +130,7 @@ header
             .number
             {
                  line-height: .8;
+                 @include transition(all .35s ease-in-out);
             }
         }//number lable wrapper
      @include container();   
@@ -142,129 +152,6 @@ header
       }
     }//pt-content
 }//pt-wrapper
-
-.flexcontainer
-{
-    display:block;
-    margin:$margin-lg-px $margin-sm-px;
-    margin:$margin-lg-rem $margin-sm-rem;
-    @media (min-width:1028px)
-      {
-        margin:$margin-lg-px $margin-lg-px;
-        margin:$margin-lg-rem $margin-lg-rem;
-      }
-}
-
-.flexcol, .flexrow
-{
-    position: relative;
-}
-
-.flexcol
-{
-    @include flex(1 0);
-    @include flexbox((
-    display: box,
-    box-orient: vertical,
-  ), $version: 1);
-  @include flexbox((
-    display: flexbox,
-    flex-direction: column
-  ), $version: 2);
-  @include flexbox((
-    display: flex,
-    flex-direction: column
-  ));
-    @include flex-wrap(nowrap);
-}
-
-.flexrow
-{
-    @include flex(1 0);
-    @include flexbox((
-    display: box,
-    box-orient: horizontal,
-  ), $version: 1);
-  @include flexbox((
-    display: flexbox,
-    flex-direction: row
-  ), $version: 2);
-  @include flexbox((
-    display: flex,
-    flex-direction: row
-  ));
-    @include flex-wrap(nowrap);
-    
-    h4
-    {
-        display: block;
-        position: absolute;
-        top: 40%;
-        font-weight: $font-bold;
-    }
-    
-    .row-label
-    {
-        left: -17px;
-        @media (min-width:1028px)
-      {
-        left: -22px;
-      }
-    }
-    
-    .col-label-wrapper
-    {
-        position: absolute;
-        top: -44px;
-    }
-    
-    .col-label
-    {
-        position:relative;
-        font-size: 9px;
-        font-size: .9rem;
-        padding: 3px 3px 3px 17px;
-         line-height: .3;
-    }
-}
-
-.box-wrapper-start
-{
-     @include flex(1 0);
-    @include flexbox((
-    display: box,
-    box-orient: horizontal,
-  ), $version: 1);
-  @include flexbox((
-    display: flexbox,
-    flex-direction: row
-  ), $version: 2);
-  @include flexbox((
-    display: flex,
-    flex-direction: row
-  ));
-    @include flex-wrap(nowrap);
-    @include justify-content(flex-start);
-}
-
-.box-wrapper-end
-{
-     @include flex(1 0);
-    @include flexbox((
-    display: box,
-    box-orient: horizontal,
-  ), $version: 1);
-  @include flexbox((
-    display: flexbox,
-    flex-direction: row
-  ), $version: 2);
-  @include flexbox((
-    display: flex,
-    flex-direction: row
-  ));
-    @include flex-wrap(nowrap);
-    @include justify-content(flex-end);
-}
 
 .focus
 {

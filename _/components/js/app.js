@@ -22,3 +22,10 @@ app.factory('jsondata', function($http) {
 **/
 	var app = angular.module('ptApp', [ 'ngAnimate', 'ngTouch', 'appControllers' ]);
     var appControllers = angular.module('appControllers', []);
+
+app.factory('jsondata', function($http) { 
+
+    var obj = {content:null};
+
+    return $http.get('_/components/js/periodicTable.json');
+});

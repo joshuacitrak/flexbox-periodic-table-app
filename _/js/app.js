@@ -1,1 +1,1 @@
-var app=angular.module("ptApp",["ngAnimate","ngTouch","appControllers"]),appControllers=angular.module("appControllers",[]);
+var app=angular.module("ptApp",["ngAnimate","ngTouch","appControllers"]),appControllers=angular.module("appControllers",[]);app.factory("jsondata",function(o){return o.get("_/components/js/periodicTable.json")});

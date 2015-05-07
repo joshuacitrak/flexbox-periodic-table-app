@@ -40,6 +40,13 @@
         box-shadow: 0 3px 15px rgba(0,0,0,0.4);
     }
     
+    //children
+    &:hover .symbol, &:hover .name, &:hover .weight &:hover .number
+    {
+        @include transition(all .35s ease-in-out);
+        @include transform(scale3d(0.9,0.9,1));
+    }
+    
      min-height: $box-min-height-xs;
     @media (min-width:$screen-sm)
       {
