@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="" ng-app="PTapp">
+<html class="no-js" lang="en" ng-app="ptApp">
 
 <head>
     <meta charset="utf-8">
@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body ng-controller="DataObjectController" ng-cloak>
     <header>
         <h1 class="title">A Periodic Table of the Elements</h1>
         <svg class="logo" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-260 346 105 105" enable-background="new -260 346 105 105" xml:space="preserve">
@@ -66,7 +66,7 @@
         <div class="focus-wrapper">
             <div class="flexrow">
                 <div class="box-wrapper-start">
-                    <div class="box focus-box">{{currentElement.symbol}}</div>
+                    <div class="box focus-box">{{currentElement.name}}</div>
                     <div class="focus-box-content">
                         <p class="focus-atomic-number">{{currentElement.number}}</p>
                         <p class="focus-name">{{currentElement.name}}</p>
@@ -1391,8 +1391,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation/foundation.offcanvas.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation/foundation.reveal.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation/foundation.tooltip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-touch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-animate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-touch.min.js"></script>
+     <script src="_/components/js/app.js"></script>
+     <script src="_/components/js/controllers/docontroller.js"></script>
 </body>
 
 <script>

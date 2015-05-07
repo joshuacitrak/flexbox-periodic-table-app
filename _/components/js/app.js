@@ -1,22 +1,7 @@
-(function() {
-	var app = angular.module('PTApp', ['ngTouch' ]).config(
-			router);
-    
-    var dataObj = [];
+//var myApp = angular.module('myApp',  ['appControllers']);
 
-	app.controller('PageController', function($scope, $rootScope, $http) {
-        //move this to service
-		$http.get('_/js/data.json').success(
-				function(data, status, headers, config) {
-                    
-					$scope.dataObj = data;
-                    
-				}).error(function(data, status, headers, config) {
-			alert('data could not be loaded. epic fail.');
-		});//error
-	});
+//var appControllers = angular.module('appControllers', []);
 
-});
 //https://github.com/diniska/chemistry/blob/master/PeriodicalTable/periodicTable.json 
 /**
 app.factory('jsondata', function($http) { 
@@ -35,3 +20,5 @@ app.factory('jsondata', function($http) {
 });
 
 **/
+	var app = angular.module('ptApp', [ 'ngAnimate', 'ngTouch', 'appControllers' ]);
+    var appControllers = angular.module('appControllers', []);
