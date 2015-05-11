@@ -3086,6 +3086,14 @@ p {
 header {
   position: relative; }
 
+.legend {
+  *zoom: 1; }
+  .legend:before, .legend:after {
+    content: " ";
+    display: table; }
+  .legend:after {
+    clear: both; }
+
 .span1, .span1-last {
   height: 55px;
   position: relative; }
@@ -3484,6 +3492,40 @@ header {
       min-width: 115.5px;
       max-width: 130.5px;
       min-height: 138px; } }
+
+.off-canvas-legend-wrapper {
+  background-color: #232323;
+  border-bottom: 2px solid #292929;
+  overflow: hidden;
+  position: relative;
+  height: 0em;
+  width: 100%;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out; }
+  .off-canvas-legend-wrapper .off-canvas-legend-content {
+    border-bottom: 2px solid #101010; }
+    .off-canvas-legend-wrapper .off-canvas-legend-content .off-canvas-legend-item {
+      width: 33.33333%;
+      float: left;
+      color: #6d6d6d;
+      text-align: center;
+      margin: 0 auto;
+      height: 100%;
+      border-right: 1px solid #101010;
+      border-left: 1px solid #292929; }
+      .off-canvas-legend-wrapper .off-canvas-legend-content .off-canvas-legend-item:first-child {
+        border-left: none; }
+      .off-canvas-legend-wrapper .off-canvas-legend-content .off-canvas-legend-item:last-child {
+        border-right: none; }
+
+.off-canvas-legend-wrapper.active {
+  height: 10em;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out; }
 
 header {
   margin: 48px 24px;

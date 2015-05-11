@@ -1,3 +1,8 @@
+.legend
+{
+    @include clearfix;
+}
+
 .span1, .span1-last
 {
     height:$box-height;

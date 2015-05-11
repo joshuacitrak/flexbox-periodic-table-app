@@ -1,3 +1,46 @@
+.off-canvas-legend-wrapper
+{
+    background-color: $dkgrey;
+  border-bottom: 2px solid lighten($black, 10%);
+    overflow: hidden;
+  position: relative;
+    height: 0em;
+  width: 100%;
+     @include transition(all .35s ease-in-out);
+  //top: -200px;
+    
+    .off-canvas-legend-content
+    {
+        border-bottom: 2px solid $black;
+        .off-canvas-legend-item
+        {
+            @include nested(3)
+                {
+                @include span(1 of 3);
+                }
+            color:$mdgrey;
+            text-align:center;
+            margin:0 auto;
+            height:100%;
+            border-right:1px solid $black;
+            border-left:1px solid lighten($black, 10%);
+            &:first-child
+            {
+                border-left:none;
+            }
+            &:last-child
+            {
+                border-right:none;
+            }
+        }//legend-item
+    }
+}//legend-content
+.off-canvas-legend-wrapper.active
+{
+    height: 10em;
+     @include transition(all .35s ease-in-out);
+}
+
 header
 {
     margin:$margin-lg-px $margin-sm-px;
@@ -41,11 +84,6 @@ header
              left: 30%;
           }
     }//logo
-}
-
-.legend
-{
-
 }
 
 .pt-wrapper
