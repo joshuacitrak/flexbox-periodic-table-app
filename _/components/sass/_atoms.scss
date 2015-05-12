@@ -46,3 +46,25 @@ header
 {
     position:relative;
 }
+
+button
+{
+    @include background($black);
+    color: $ltgrey;
+     font-size:16px;
+    font-size: 1.6rem;
+    font-weight:$font-bold;
+    text-align:center;
+    @include transition(all .35s ease-in-out);
+    
+    &:hover, &:focus, &:visited
+    {
+        @include background(lighten($black, 10%));
+        @include transition(all .35s ease-in-out);
+        outline:none; //why? when this is already in resets?
+    }
+    &:visited
+    {
+        @include background($black);
+    }
+}

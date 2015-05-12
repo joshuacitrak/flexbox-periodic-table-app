@@ -3086,6 +3086,27 @@ p {
 header {
   position: relative; }
 
+button {
+  background: #101010;
+  color: lightgray;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out; }
+  button:hover, button:focus, button:visited {
+    background: #292929;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    outline: none; }
+  button:visited {
+    background: #101010; }
+
 .legend {
   *zoom: 1; }
   .legend:before, .legend:after {
@@ -3093,6 +3114,15 @@ header {
     display: table; }
   .legend:after {
     clear: both; }
+
+.legend-pt-box {
+  width: 60px !important;
+  height: 80px !important;
+  margin: 0 auto; }
+  @media (min-width: 910px) {
+    .legend-pt-box {
+      width: 80px !important;
+      height: 100px !important; } }
 
 .span1, .span1-last {
   height: 55px;
@@ -3505,7 +3535,14 @@ header {
   -webkit-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out; }
   .off-canvas-legend-wrapper .off-canvas-legend-content {
-    border-bottom: 2px solid #101010; }
+    border-bottom: 2px solid #101010;
+    height: 100%;
+    *zoom: 1; }
+    .off-canvas-legend-wrapper .off-canvas-legend-content:before, .off-canvas-legend-wrapper .off-canvas-legend-content:after {
+      content: " ";
+      display: table; }
+    .off-canvas-legend-wrapper .off-canvas-legend-content:after {
+      clear: both; }
     .off-canvas-legend-wrapper .off-canvas-legend-content .off-canvas-legend-item {
       width: 33.33333%;
       float: left;
@@ -3514,11 +3551,18 @@ header {
       margin: 0 auto;
       height: 100%;
       border-right: 1px solid #101010;
-      border-left: 1px solid #292929; }
+      border-left: 1px solid #292929;
+      padding: 24px 0;
+      padding: 2.4rem 0; }
       .off-canvas-legend-wrapper .off-canvas-legend-content .off-canvas-legend-item:first-child {
         border-left: none; }
       .off-canvas-legend-wrapper .off-canvas-legend-content .off-canvas-legend-item:last-child {
         border-right: none; }
+      .off-canvas-legend-wrapper .off-canvas-legend-content .off-canvas-legend-item img {
+        width: 60px; }
+        @media (min-width: 910px) {
+          .off-canvas-legend-wrapper .off-canvas-legend-content .off-canvas-legend-item img {
+            width: 80px; } }
 
 .off-canvas-legend-wrapper.active {
   height: 10em;
