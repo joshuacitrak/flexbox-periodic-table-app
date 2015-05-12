@@ -3124,6 +3124,14 @@ button {
       width: 80px !important;
       height: 100px !important; } }
 
+.legend-text {
+  font-size: 40px;
+  font-size: 2.5em; }
+  @media (min-width: 910px) {
+    .legend-text {
+      font-size: 48px;
+      font-size: 3em; } }
+
 .span1, .span1-last {
   height: 55px;
   position: relative; }
@@ -3563,6 +3571,12 @@ button {
         @media (min-width: 910px) {
           .off-canvas-legend-wrapper .off-canvas-legend-content .off-canvas-legend-item img {
             width: 80px; } }
+      .off-canvas-legend-wrapper .off-canvas-legend-content .off-canvas-legend-item img.wiki {
+        width: 90px;
+        padding-left: 9px; }
+        @media (min-width: 910px) {
+          .off-canvas-legend-wrapper .off-canvas-legend-content .off-canvas-legend-item img.wiki {
+            width: 100px; } }
 
 .off-canvas-legend-wrapper.active {
   height: 10em;

@@ -45,6 +45,15 @@
                       width:80px;
                   }
             }//img
+            img.wiki
+            {
+                width: 90px;
+                padding-left: 9px;
+                @media (min-width:$screen-sm)
+                  {
+                      width:100px;
+                  }
+            }
         }//legend-item
     }
 }//legend-content
