@@ -192,6 +192,7 @@ header
                  line-height: .8;
                  @include transition(all .35s ease-in-out);
             }
+           
         }//number lable wrapper
      @include container();   
     @media (min-width:$screen-sm)

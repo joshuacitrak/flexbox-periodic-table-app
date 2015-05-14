@@ -3116,8 +3116,13 @@ button {
     clear: both; }
 
 .legend-pt-box {
-  width: 60px !important;
-  height: 80px !important;
+  width: 60px;
+  height: 80px;
+  background: #71abe1;
+  border: 1px solid #4792d8;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
   margin: 0 auto; }
   @media (min-width: 910px) {
     .legend-pt-box {
@@ -3126,13 +3131,29 @@ button {
 
 .legend-text {
   font-size: 40px;
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  color: lightgray; }
   @media (min-width: 910px) {
     .legend-text {
       font-size: 48px;
       font-size: 3em; } }
 
-.span1, .span1-last {
+.legend-symbol,
+.legend-name,
+.legend-weight, .legend-number {
+  color: lightgray; }
+
+.legend-name {
+  font-style: italic;
+  font-size: 8px;
+  font-size: .8rem; }
+
+.legend-weight {
+  font-size: 8px;
+  font-size: .8rem; }
+
+.span1,
+.span1-last {
   height: 55px;
   position: relative; }
 
@@ -3324,7 +3345,18 @@ button {
     .flexcontainer {
       max-width: 1600px; } }
 
-.box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11 {
+.box,
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9,
+.box10,
+.box11 {
   -webkit-flex: 1 0;
   flex: 1 0;
   background: #ededed;
@@ -3344,26 +3376,81 @@ button {
   -webkit-transform: perspective(1000px) translate3d(0, 0, 0);
   transform: perspective(1000px) translate3d(0, 0, 0); }
   @media (min-width: 910px) {
-    .box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11 {
+    .box,
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box7,
+    .box8,
+    .box9,
+    .box10,
+    .box11 {
       min-width: 46px;
       max-width: 48px;
       min-height: 70px; } }
   @media (min-width: 1028px) {
-    .box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11 {
+    .box,
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box7,
+    .box8,
+    .box9,
+    .box10,
+    .box11 {
       min-width: 52px;
       max-width: 57px;
       min-height: 75px; } }
   @media (min-width: 1290px) {
-    .box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11 {
+    .box,
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box7,
+    .box8,
+    .box9,
+    .box10,
+    .box11 {
       min-width: 65px;
       max-width: 70px;
       min-height: 80px; } }
   @media (min-width: 1600px) {
-    .box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11 {
+    .box,
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box7,
+    .box8,
+    .box9,
+    .box10,
+    .box11 {
       min-width: 77px;
       max-width: 87px;
       min-height: 92px; } }
-  .box:hover, .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover, .box9:hover, .box10:hover, .box11:hover {
+  .box:hover,
+  .box1:hover,
+  .box2:hover,
+  .box3:hover,
+  .box4:hover,
+  .box5:hover,
+  .box6:hover,
+  .box7:hover,
+  .box8:hover,
+  .box9:hover,
+  .box10:hover,
+  .box11:hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1;
     -moz-transform: perspective(1000px) translate3d(0, 0, 21px);

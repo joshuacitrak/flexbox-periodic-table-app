@@ -1,333 +1,345 @@
-.legend
-{
+.legend {
     @include clearfix;
 }
 
-.legend-pt-box
-{
-    width: 60px!important;
-    height: 80px!important;
+.legend-pt-box {
+    @include content-box-rounded(60px, 80px, $ltblue, darken($ltblue, 10), $box-radius);
+    //width: 60px!important;
+    // height: 80px!important;
     margin: 0 auto;
-    @media (min-width:$screen-sm)
-    {
+    @media (min-width: $screen-sm) {
         width: 80px!important;
         height: 100px!important;
     }
 }
 
-.legend-text
-{
+.legend-text {
     font-size: 40px;
     font-size: 2.5em;
-     @media (min-width:$screen-sm)
-    {
+    color: $ltgrey;
+    @media (min-width: $screen-sm) {
         font-size: 48px;
         font-size: 3em;
     }
 }
 
-.span1, .span1-last
-{
-    height:$box-height;
+.legend-symbol,
+.legend-name,
+.legend-weight, .legend-number {
+    color: $ltgrey;
+}
+
+.legend-name {
+    font-style: italic;
+    font-size: 8px;
+    font-size: .8rem;
+}
+.legend-weight {
+    font-size: 8px;
+    font-size: .8rem;
+}
+
+
+.span1,
+.span1-last {
+    height: $box-height;
     position: relative;
 }
 
-.span1
-{
+.span1 {
     @include span(1 of 18);
 }
 
-.span1-last
-{
+.span1-last {
     @include span(1 of 18 last);
 }
 
-.push3
-{
+.push3 {
     margin-left: span(3 of 18);
 }
-.push10
-{
+
+.push10 {
     margin-left: span(10 of 18);
 }
 
-.pt-box
-{
+.pt-box {
     @include content-box-rounded(span(1 of 18), 100%, $white, $white, $box-radius);
-     //margin:1px;
-    cursor:pointer;
-    
+    //margin:1px;
+    cursor: pointer;
     @include opacity(.85);
     @include transition(all .35s ease-in-out);
-    
-	 @include transform(perspective(1000px) translate3d(0,0,0));
-    &:hover
-    {
-        @include opacity(1);      
-        @include transform(perspective(1000px) translate3d(0,0,21px));
-        box-shadow: 0 3px 15px rgba(0,0,0,0.4);
+    @include transform(perspective(1000px) translate3d(0, 0, 0));
+    &:hover {
+        @include opacity(1);
+        @include transform(perspective(1000px) translate3d(0, 0, 21px));
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
     }
-    
     //children
-    &:hover .symbol, &:hover .name, &:hover .weight &:hover .number
-    {
+    &:hover .symbol,
+    &:hover .name,
+    &:hover .weight &:hover .number {
         @include transition(all .35s ease-in-out);
-        @include transform(scale3d(0.9,0.9,1));
+        @include transform(scale3d(0.9, 0.9, 1));
     }
-    
-     min-height: $box-min-height-xs;
-    @media (min-width:$screen-sm)
-      {
+    min-height: $box-min-height-xs;
+    @media (min-width: $screen-sm) {
         min-height: $box-min-height-sm;
-      }
-    @media (min-width:$screen-md)
-      {
+    }
+    @media (min-width: $screen-md) {
         min-height: $box-min-height-md;
-      }
-@media (min-width:$screen-lg)
-      {
+    }
+    @media (min-width: $screen-lg) {
         min-height: $box-min-height-lg;
-      }
-    
-@media (min-width:$screen-xl)
-      {
+    }
+    @media (min-width: $screen-xl) {
         min-height: $box-min-height-xl;
-      }
+    }
 }
 
-.pt-box-1 /*non-metails*/
+.pt-box-1
+/*non-metails*/
+
 {
-    @include content-box-rounded(span(1 of 18), 100%, $dkgreenyellow, darken($dkgreenyellow,10), $box-radius);
+    @include content-box-rounded(span(1 of 18), 100%, $dkgreenyellow, darken($dkgreenyellow, 10), $box-radius);
 }
 
-.pt-box-2 /*noble gasses*/
+.pt-box-2
+/*noble gasses*/
+
 {
-    @include content-box-rounded(span(1 of 18), 100%, $ltblue, darken($ltblue,10), $box-radius);
+    @include content-box-rounded(span(1 of 18), 100%, $ltblue, darken($ltblue, 10), $box-radius);
 }
 
-.pt-box-3 /*alkalia metals*/
+.pt-box-3
+/*alkalia metals*/
+
 {
-    @include content-box-rounded(span(1 of 18), 100%, $dkred, darken($dkred,10), $box-radius);
+    @include content-box-rounded(span(1 of 18), 100%, $dkred, darken($dkred, 10), $box-radius);
 }
 
-.pt-box-4 /*akalai earth*/
+.pt-box-4
+/*akalai earth*/
+
 {
-    @include content-box-rounded(span(1 of 18), 100%, $dkbrownred, darken($dkbrownred,10), $box-radius);
+    @include content-box-rounded(span(1 of 18), 100%, $dkbrownred, darken($dkbrownred, 10), $box-radius);
 }
 
-.pt-box-5 /*basic metals*/
+.pt-box-5
+/*basic metals*/
+
 {
-    @include content-box-rounded(span(1 of 18), 100%, $dkblue, darken($dkblue,10), $box-radius);
+    @include content-box-rounded(span(1 of 18), 100%, $dkblue, darken($dkblue, 10), $box-radius);
 }
 
-.pt-box-6 /*semi-metals*/
+.pt-box-6
+/*semi-metals*/
+
 {
-    @include content-box-rounded(span(1 of 18), 100%, $ltgreen, darken($ltgreen, 10) ,$box-radius);
+    @include content-box-rounded(span(1 of 18), 100%, $ltgreen, darken($ltgreen, 10), $box-radius);
 }
 
-.pt-box-7 /*halogens*/
+.pt-box-7
+/*halogens*/
+
 {
     @include content-box-rounded(span(1 of 18), 100%, $dkgreen, darken($dkgreen, 10), $box-radius);
 }
 
-.pt-box-8 /*transtion*/
+.pt-box-8
+/*transtion*/
+
 {
-     @include content-box-rounded(span(1 of 18), 100%, $dkpink, darken($dkpink, 10), $box-radius);
+    @include content-box-rounded(span(1 of 18), 100%, $dkpink, darken($dkpink, 10), $box-radius);
 }
 
-.pt-box-9 /*lanathide*/
-{
-   @include content-box-rounded(span(1 of 18), 100%, $ltpink, darken($ltpink, 10), $box-radius);
-}
+.pt-box-9
+/*lanathide*/
 
-.pt-box-10 /*actinide*/
-{
-    @include content-box-rounded(span(1 of 18), 100%, $ltorange, darken($ltorange,10), $box-radius);
-}
-
-.pt-box-11 /*lanathide actinide spacer*/
 {
     @include content-box-rounded(span(1 of 18), 100%, $ltpink, darken($ltpink, 10), $box-radius);
 }
 
-.pt-box-12 /*metaloids*/
+.pt-box-10
+/*actinide*/
+
 {
-    @include content-box-rounded(span(1 of 18), 100%, $ltgreen, darken($ltgreen, 10), $box-radius); 
+    @include content-box-rounded(span(1 of 18), 100%, $ltorange, darken($ltorange, 10), $box-radius);
 }
 
-.flexcontainer
+.pt-box-11
+/*lanathide actinide spacer*/
+
 {
-   max-width:768px;
-    position:relative;
-     @media (min-width:$screen-sm)
-      {
-        max-width:$screen-sm;
-      }
-     @media (min-width:$screen-md)
-      {
-        max-width:$screen-md;
-      }
-    @media (min-width:$screen-lg)
-      {
-        max-width:$screen-lg;
-      }
-    
-@media (min-width:$screen-xl)
-      {
-        max-width:$screen-xl;
-      }
+    @include content-box-rounded(span(1 of 18), 100%, $ltpink, darken($ltpink, 10), $box-radius);
 }
 
-.box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11
+.pt-box-12
+/*metaloids*/
+
 {
-    @include flex(1 0);
-    @include background($white);
-    min-width: $box-min-width-xs; //all boxes should have these min/maxes
-    max-width:$box-max-width-xs;
-    min-height: $box-min-height-xs;
-    @media (min-width:$screen-sm)
-      {
-        min-width: $box-min-width-sm; //all boxes should have these min/maxes
-        max-width:$box-max-width-sm;
-        min-height: $box-min-height-sm;
-      }
-    @media (min-width:$screen-md)
-      {
-        min-width: $box-min-width-md; //all boxes should have these min/maxes
-        max-width:$box-max-width-md;
-        min-height: $box-min-height-md;
-      }
-@media (min-width:$screen-lg)
-      {
-        min-width: $box-min-width-lg; //all boxes should have these min/maxes
-        max-width:$box-max-width-lg;
-        min-height: $box-min-height-lg;
-      }
-    
-@media (min-width:$screen-xl)
-      {
-        min-width: $box-min-width-xl; //all boxes should have these min/maxes
-        max-width:$box-max-width-xl;
-        min-height: $box-min-height-xl;
-      }
-    
-    margin:1px;
-    
-    cursor:pointer;
-    
-    @include opacity(.85);
-    @include transition(all .35s ease-in-out);
-    
-	 @include transform(perspective(1000px) translate3d(0,0,0));
-    &:hover
-    {
-        @include opacity(1);      
-        @include transform(perspective(1000px) translate3d(0,0,21px));
-        box-shadow: 0 3px 15px rgba(0,0,0,0.4);
+    @include content-box-rounded(span(1 of 18), 100%, $ltgreen, darken($ltgreen, 10), $box-radius);
+}
+
+.flexcontainer {
+    max-width: 768px;
+    position: relative;
+    @media (min-width: $screen-sm) {
+        max-width: $screen-sm;
+    }
+    @media (min-width: $screen-md) {
+        max-width: $screen-md;
+    }
+    @media (min-width: $screen-lg) {
+        max-width: $screen-lg;
+    }
+    @media (min-width: $screen-xl) {
+        max-width: $screen-xl;
     }
 }
 
+.box,
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9,
+.box10,
+.box11 {
+    @include flex(1 0);
+    @include background($white);
+    min-width: $box-min-width-xs; //all boxes should have these min/maxes
+    max-width: $box-max-width-xs;
+    min-height: $box-min-height-xs;
+    @media (min-width: $screen-sm) {
+        min-width: $box-min-width-sm; //all boxes should have these min/maxes
+        max-width: $box-max-width-sm;
+        min-height: $box-min-height-sm;
+    }
+    @media (min-width: $screen-md) {
+        min-width: $box-min-width-md; //all boxes should have these min/maxes
+        max-width: $box-max-width-md;
+        min-height: $box-min-height-md;
+    }
+    @media (min-width: $screen-lg) {
+        min-width: $box-min-width-lg; //all boxes should have these min/maxes
+        max-width: $box-max-width-lg;
+        min-height: $box-min-height-lg;
+    }
+    @media (min-width: $screen-xl) {
+        min-width: $box-min-width-xl; //all boxes should have these min/maxes
+        max-width: $box-max-width-xl;
+        min-height: $box-min-height-xl;
+    }
+    margin:1px;
+    cursor:pointer;
+    @include opacity(.85);
+    @include transition(all .35s ease-in-out);
+    @include transform(perspective(1000px) translate3d(0,
+    0,
+    0));
+    &:hover {
+        @include opacity(1);
+        @include transform(perspective(1000px) translate3d(0, 0, 21px));
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+    }
+}
 /*non-metails*/
-.box
-{
-    @include content-box-rounded($box-width, $box-height, $dkgreenyellow, darken($dkgreenyellow,10), $box-radius);
+
+.box {
+    @include content-box-rounded($box-width, $box-height, $dkgreenyellow, darken($dkgreenyellow, 10), $box-radius);
 }
 /*noble gasses*/
-.box1
-{
-   @include content-box-rounded($box-width, $box-height, $ltblue, darken($ltblue,10), $box-radius);
+
+.box1 {
+    @include content-box-rounded($box-width, $box-height, $ltblue, darken($ltblue, 10), $box-radius);
 }
 /*alkali metails*/
-.box2
-{
-    @include content-box-rounded($box-width, $box-height, $dkred, darken($dkred,10), $box-radius);
+
+.box2 {
+    @include content-box-rounded($box-width, $box-height, $dkred, darken($dkred, 10), $box-radius);
 }
 /*alkal-earth*/
-.box3
-{
-    @include content-box-rounded($box-width, $box-height, $dkbrownred, darken($dkbrownred,10), $box-radius);
+
+.box3 {
+    @include content-box-rounded($box-width, $box-height, $dkbrownred, darken($dkbrownred, 10), $box-radius);
 }
 /*basic-metails*/
-.box4
-{
-    @include content-box-rounded($box-width, $box-height, $dkpurple, darken($dkpurple,10), $box-radius);
+
+.box4 {
+    @include content-box-rounded($box-width, $box-height, $dkpurple, darken($dkpurple, 10), $box-radius);
 }
 /*semi-metails*/
-.box5
-{
-    @include content-box-rounded($box-width, $box-height, $ltpurple, darken($ltpurple,10), $box-radius);
+
+.box5 {
+    @include content-box-rounded($box-width, $box-height, $ltpurple, darken($ltpurple, 10), $box-radius);
 }
 /*halogen*/
-.box6
-{
+
+.box6 {
     @include content-box-rounded($box-width, $box-height, $dkgreen, darken($dkgreen, 10), $box-radius);
 }
 /*transition-metails*/
-.box7
-{
-    @include content-box-rounded($box-width, $box-height, $ltyellow, darken($ltyellow, 10) ,$box-radius);
+
+.box7 {
+    @include content-box-rounded($box-width, $box-height, $ltyellow, darken($ltyellow, 10), $box-radius);
 }
 /*lanthanide*/
-.box8
-{
- @include content-box-rounded($box-width, $box-height, $ltred, darken($ltred, 10), $box-radius);   
+
+.box8 {
+    @include content-box-rounded($box-width, $box-height, $ltred, darken($ltred, 10), $box-radius);
 }
 /*actinide*/
-.box9
-{
+
+.box9 {
     @include content-box-rounded($box-width, $box-height, $dkpink, darken($dkpink, 10), $box-radius);
 }
 /*metaliods*/
-.box10
-{
-    @include content-box-rounded($box-width, $box-height, $ltgreen, darken($ltgreen, 10), $box-radius); 
+
+.box10 {
+    @include content-box-rounded($box-width, $box-height, $ltgreen, darken($ltgreen, 10), $box-radius);
 }
 /*lan-act-spacers*/
-.box11
-{
+
+.box11 {
     @include content-box-rounded($box-width, $box-height, $ltpink, darken($ltpink, 10), $box-radius);
 }
 /*lan-act-spacers*/
-.box12
-{
+
+.box12 {
     @include content-box-rounded(100%, 100%, $ltpink, darken($ltpink, 10), $box-radius);
 }
 
-.divider
-{
+.divider {
     border: none;
-    margin:$margin-sm-px 0;
+    margin: $margin-sm-px 0;
 }
 
-.focus-box
-{
+.focus-box {
     min-width: $box-min-width-xs*1.5; //all boxes should have these min/maxes
-    max-width:$box-max-width-xs*1.5;
+    max-width: $box-max-width-xs*1.5;
     min-height: $box-min-height-xs*1.5;
-    @media (min-width:$screen-sm)
-      {
+    @media (min-width: $screen-sm) {
         min-width: $box-min-width-sm*1.5; //all boxes should have these min/maxes
-        max-width:$box-max-width-sm*1.5;
+        max-width: $box-max-width-sm*1.5;
         min-height: $box-min-height-sm*1.5;
-      }
-    @media (min-width:$screen-md)
-      {
+    }
+    @media (min-width: $screen-md) {
         min-width: $box-min-width-md*1.5; //all boxes should have these min/maxes
-        max-width:$box-max-width-md*1.5;
+        max-width: $box-max-width-md*1.5;
         min-height: $box-min-height-md*1.5;
-      }
-@media (min-width:$screen-lg)
-      {
+    }
+    @media (min-width: $screen-lg) {
         min-width: $box-min-width-lg*1.5; //all boxes should have these min/maxes
-        max-width:$box-max-width-lg*1.5;
+        max-width: $box-max-width-lg*1.5;
         min-height: $box-min-height-lg*1.5;
-      }
-    
-@media (min-width:$screen-xl)
-      {
+    }
+    @media (min-width: $screen-xl) {
         min-width: $box-min-width-xl*1.5; //all boxes should have these min/maxes
-        max-width:$box-max-width-xl*1.5;
+        max-width: $box-max-width-xl*1.5;
         min-height: $box-min-height-xl*1.5;
-      }
+    }
 }
-

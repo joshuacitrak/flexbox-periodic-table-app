@@ -5,16 +5,23 @@ app.controller('EventsController', function($scope, $rootScope, $http, jsondata)
 				function(data, status, headers, config) {
                 
                     $(".pt-box").click(clickHandler);
-                    $(".pt-box").hover(hoverHandler);
+                    $(".pt-box").hover(hoverHandlerIn, hoverHandlerOut);
                     
                     function clickHandler(evt){
                         console.log("CLICKED");
                         //update main element
                     };     //click handler]\
                     
-                    function hoverHandler(evt){
+                    function hoverHandlerIn(evt){
                         console.log("HOVER"+ $(this));
-                        //added tooltip
+                         $(this).append("<span data-tooltip data-options='hover_delay: 50;' class='has-tip' title='Tooltips are awesome, you should totally use them!'>...</span>");
+                        //added tooltip <span data-tooltip data-options="hover_delay: 50;" class="has-tip" title="Tooltips are awesome, you should totally use them!">...</span>
+                    };   //hover hanlders      
+                    
+                    function hoverHandlerOut(evt){
+                        console.log("HOVER OUT"+ $(this));
+                         $(".has-tip").empty();
+                        //added tooltip <span data-tooltip data-options="hover_delay: 50;" class="has-tip" title="Tooltips are awesome, you should totally use them!">...</span>
                     };   //hover hanlders      
                     
                     function legendOpenClose()
