@@ -343,3 +343,15 @@
         min-height: $box-min-height-xl*1.5;
     }
 }
+
+.help-btn
+{
+
+}
+
+.show-for-sr
+{
+    position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
+}

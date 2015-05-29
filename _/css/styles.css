@@ -3618,6 +3618,11 @@ button {
       max-width: 130.5px;
       min-height: 138px; } }
 
+.show-for-sr {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important; }
+
 .off-canvas-legend-wrapper {
   background-color: #232323;
   border-bottom: 2px solid #292929;
