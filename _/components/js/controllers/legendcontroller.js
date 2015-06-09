@@ -16,5 +16,13 @@ app.controller('LegendController', function($scope, $rootScope, $http, jsondata)
                         $scope.isLegendOpen = !$scope.isLegendOpen;
                     };
                     
+                    $scope.switchView = function()
+                    {
+                        if($scope.isLegendOpen)
+                       {
+                            $scope.legendOpenClose();
+                       }
+                    };
+                    
                 });    
 });//docontroller
