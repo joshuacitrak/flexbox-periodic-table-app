@@ -344,9 +344,25 @@
     }
 }
 
-.help-btn
+.icon-btn
 {
-
+    //color:$black; // put a piece of text in here to force btn height == to text btns
+    
+    &:before
+    {
+        //content:"\00a0"; // put a piece of text in here to force btn height == to text btns
+    }
+    
+    &:hover, &:focus, &:visited
+    {
+        @include transition(all .35s ease-in-out);
+        outline:none; //why? when this is already in resets?
+        //color:lighten($black, 10%);
+    }
+    &:visited
+    {
+        @include background($black);
+    }
 }
 
 .show-for-sr

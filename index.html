@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/css/foundation.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="_/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="_/css/styles.css">
 
@@ -63,9 +64,9 @@
            </aside>
        </section>
        <nav>
-           <button class="help-btn" ng-click="legendOpenClose()"><span class="show-for-sr">help</span>?</button>
-           <button class="btn" ng-click="switchView()"><span class="show-for-sr">Periodic Table view</span>PT</button>
-           <button class="btn" ng-click="switchView()"><span class="show-for-sr">Elements List view</span>EL</button>
+           <button class="btn icon-btn" ng-click="legendOpenClose()"><span class="show-for-sr">Help</span><i class="fa fa-question"></i></button>
+           <button class="btn icon-btn" ng-click="switchView()"><span class="show-for-sr">Periodic Table view</span><i class="fa fa-th"></i></button>
+           <button class="btnicont-btn" ng-click="switchView()"><span class="show-for-sr">Elements List view</span><i class="fa fa-list"></i></button>
        </nav>
    </div>
    
@@ -113,6 +114,7 @@
         <p>To get the best use of this app, you should be in pandscape mode on a device greater than or equal to 768 pixels in width. What's your device? <a href="http://www.mydevice.io" target="_blank">Check it here</a>.</p>
         <a class="close-reveal-modal" aria-label="Close">&#215;</a>
     </div>
+
 
     <section class="focus">
         <div class="focus-wrapper">
@@ -1781,6 +1783,19 @@
         <!--pt-content-->
 
     </section>
+    
+    <footer>
+    <section class="contact">
+        <ul class="contact-list">
+            <li class="contact-list-item email-item"><span class="show-for-sr">Email</span></li>
+            <li class="contact-list-item facebook-item"><span class="show-for-sr">Facebook</span></li>
+            <li class="contact-list-item twitter-item"><span class="show-for-sr">Twitter</span></li>
+            <li class="contact-list-item linkedin-item"><span class="show-for-sr">LinkedIn</span></li>
+            <li class="contact-list-item gplus-item"><span class="show-for-sr">Google Plus</span></li>
+        </ul>
+    </section>
+    <section class="copyright"><p>&copy; 2015 Clever Interweb Stuffs</p></section>
+    </footer>
     
     <!--icon credit
     <div>Icons made by <a href="http://www.flaticon.com/authors/yannick" title="Yannick">Yannick</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>

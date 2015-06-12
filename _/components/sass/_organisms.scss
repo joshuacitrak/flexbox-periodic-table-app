@@ -1,315 +1,300 @@
-.off-canvas-legend-wrapper
-{
+.off-canvas-legend-wrapper {
     background-color: $dkgrey;
-  border-bottom: 2px solid lighten($black, 10%);
+    border-bottom: 2px solid lighten($black, 10%);
     overflow: hidden;
-  position: relative;
+    position: relative;
     height: 0em;
-  width: 100%;
-     @include transition(all .35s ease-in-out);
-  //top: -200px;
-    
-    .off-canvas-legend-content
-    {
+    width: 100%;
+    @include transition(all .35s ease-in-out);
+    //top: -200px;
+    .off-canvas-legend-content {
         border-bottom: 2px solid $black;
-        height:100%;
+        height: 100%;
         @include clearfix;
-        .off-canvas-legend-item
-        {
-            @include nested(3)
-                {
+        .off-canvas-legend-item {
+            @include nested(3) {
                 @include span(1 of 3);
-                }
+            }
             color:$mdgrey;
             text-align:center;
             margin:0 auto;
             height:100%;
             border-right:1px solid $black;
-            border-left:1px solid lighten($black, 10%);
+            border-left:1px solid lighten($black,
+            10%);
             padding: $margin-sm-px 0;
             padding: $margin-sm-rem 0;
-            &:first-child
-            {
-                border-left:none;
+            &:first-child {
+                border-left: none;
             }
-            &:last-child
-            {
-                border-right:none;
+            &:last-child {
+                border-right: none;
             }
-            
-            img
-            {
-                width:60px;
-                @media (min-width:$screen-sm)
-                  {
-                      width:80px;
-                  }
-            }//img
-            img.wiki
-            {
+            img {
+                width: 60px;
+                @media (min-width: $screen-sm) {
+                    width: 80px;
+                }
+            } //img
+            img.wiki {
                 width: 90px;
                 padding-left: 9px;
-                @media (min-width:$screen-sm)
-                  {
-                      width:100px;
-                  }
+                @media (min-width: $screen-sm) {
+                    width: 100px;
+                }
             }
-        }//legend-item
+        } //legend-item
     }
-}//legend-content
-.off-canvas-legend-wrapper.active
-{
+} //legend-content
+.off-canvas-legend-wrapper.active {
     height: 10em;
-     @include transition(all .35s ease-in-out);
+    @include transition(all .35s ease-in-out);
 }
 
-header
-{
-    margin:$margin-lg-px $margin-sm-px;
-    margin:$margin-lg-rem $margin-sm-rem;
-    @media (min-width:$screen-md)
-      {
-        margin:$margin-lg-px $margin-lg-px;
-        margin:$margin-lg-rem $margin-lg-rem;
-      }
-    .title
-    {
-        font-size:30px;
+header {
+    margin: $margin-lg-px $margin-sm-px;
+    margin: $margin-lg-rem $margin-sm-rem;
+    @media (min-width: $screen-md) {
+        margin: $margin-lg-px $margin-lg-px;
+        margin: $margin-lg-rem $margin-lg-rem;
+    }
+    .title {
+        font-size: 30px;
         font-size: 3rem;
         text-align: center;
     }
-
-     .logo
-    {
-        height:45px;
-        width:45px;
-        position:absolute;
+    .logo {
+        height: 45px;
+        width: 45px;
+        position: absolute;
         top: -12px;
         left: 10%;
-         @media (min-width:$screen-sm)
-          {
-             left: 15%;
-          }
-         @media (min-width:$screen-md)
-          {
-             left: 20%;
-              height:55px;
-              width:55px;
-          }
-        @media (min-width:$screen-lg
-       )
-          {
-             left: 25%;
-          }
-        @media (min-width:$screen-xl)
-          {
-             left: 30%;
-          }
-    }//logo
+        @media (min-width: $screen-sm) {
+            left: 15%;
+        }
+        @media (min-width: $screen-md) {
+            left: 20%;
+            height: 55px;
+            width: 55px;
+        }
+        @media (min-width: $screen-lg) {
+            left: 25%;
+        }
+        @media (min-width: $screen-xl) {
+            left: 30%;
+        }
+    } //logo
 }
 
-.pt-wrapper
-{
-    position:relative;
-     display:block;
-    margin:$margin-lg-px $margin-sm-px;
-    margin:$margin-lg-rem $margin-sm-rem;
-    @media (min-width:1028px)
-      {
-        margin:$margin-lg-px $margin-lg-px;
-        margin:$margin-lg-rem $margin-lg-rem;
-      }
-    .pt-content
-    {
-        h4
-        {
+.pt-wrapper {
+    position: relative;
+    display: block;
+    margin: $margin-lg-px $margin-sm-px;
+    margin: $margin-lg-rem $margin-sm-rem;
+    @media (min-width: 1028px) {
+        margin: $margin-lg-px $margin-lg-px;
+        margin: $margin-lg-rem $margin-lg-rem;
+    }
+    .pt-content {
+        h4 {
             display: block;
             position: absolute;
             font-weight: $font-bold;
         }
-
-        .row-label
-        {
+        .row-label {
             left: -17px;
-            @media (min-width:1028px)
-          {
-            left: -22px;
-          }
+            @media (min-width: 1028px) {
+                left: -22px;
+            }
         }
-
-        .col-label-wrapper
-        {
+        .col-label-wrapper {
             position: absolute;
             top: -44px;
         }
-
-        .col-label
-        {
-            position:relative;
+        .col-label {
+            position: relative;
             font-size: 9px;
             font-size: .9rem;
             padding: 3px 3px 3px 17px;
-             line-height: .3;
+            line-height: .3;
         }
-        
-        .symbol-label-wrapper
-        {
-            .symbol
-            {
-                 @include transition(all .35s ease-in-out);
+        .symbol-label-wrapper {
+            .symbol {
+                text-align: center;
+                padding-top: 30%;
+                font-size: 29px;
+                ;
+                font-size: 2.9rem;
+                font-weight: bold;
+                line-height: 1;
+                @include transition(all .35s ease-in-out);
             }
-        }//symbol-balel-wrapper
-        
-        .name-label-wrapper
-        {
+        } //symbol-balel-wrapper
+        .name-label-wrapper {
             margin: 0 auto;
             text-align: center;
-            .name, .weight
-            {
+            .name, .weight {
                 line-height: .8;
                 @include transition(all .35s ease-in-out);
             }
-            .name
-            {
+            .name {
                 font-style: italic;
+                font-size: 13px;
+                font-size: 1.3rem;
+                margin-bottom: 12px;
+                margin-bottom: 1.2rem;
+            }
+            .weight {
                 font-size: 8px;
                 font-size: .8rem;
             }
-            .weight
-            {
-                font-size: 8px;
-                font-size: .8rem;
+        } //name label wrapper
+        .number-label-wrapper {
+            position: absolute;
+            top: 4%;
+            left: 4%;
+            .number {
+                line-height: .8;
+                font-size: 18px;
+                font-size: 1.8rem;
+                @include transition(all .35s ease-in-out);
             }
-        }//name label wrapper
-        
-        .number-label-wrapper
-        {
-            position:absolute;
-            top:0;
-            left:0;
-            .number
-            {
-                 line-height: .8;
-                 @include transition(all .35s ease-in-out);
+        } //number label wrapper
+        .electron-label-wrapper {
+            position: absolute;
+            top: 10%;
+            right: 4%;
+            .electron {
+                font-size: 10px;
+                font-size: 1rem;
+                margin-bottom: 0;
+                line-height: 1;
             }
-           
-        }//number lable wrapper
-     @include container();   
-    @media (min-width:$screen-sm)
-      {
-        @include container($screen-sm);
-      }
-     @media (min-width:$screen-md)
-      {
-          @include container($screen-md);
-      }
-    @media (min-width:$screen-lg)
-      {
-          @include container($screen-lg);
-      }
-        @media (min-width:$screen-xl)
-      {
-          @include container($screen-xl);
-      }
-    }//pt-content
-}//pt-wrapper
-
-.focus
-{
-    position:relative;
-    .focus-wrapper
-    {
-        position:absolute;
-        top:5%;
-        left:17%;
-        z-index:32;
+        } //electron-label-wrapper
+        .list-table {
+            @include inner-table-borders(1px, $ltgrey);
+            @include outer-table-borders(2px, $dkgrey);
+            border-radius: $box-radius;
+            width: 80%;
+            .list-table-header {
+                font-size: 26px;
+                font-size: 2.6rem;
+                line-height: 1;
+            }
+            .list-table-content {
+                font-size: 16px;
+                font-size: 1.6rem;
+                padding: 12px 6.25px; //same as default
+                padding: 1.2rem 0.625rem;
+            }
+        } //list-table
+        @include container();
+        @media (min-width: $screen-sm) {
+            @include container($screen-sm);
+        }
+        @media (min-width: $screen-md) {
+            @include container($screen-md);
+        }
+        @media (min-width: $screen-lg) {
+            @include container($screen-lg);
+        }
+        @media (min-width: $screen-xl) {
+            @include container($screen-xl);
+        }
+    } //pt-content
+} //pt-wrapper
+.focus {
+    position: relative;
+    .focus-wrapper {
+        position: absolute;
+        top: 5%;
+        left: 17%;
+        z-index: 32;
     }
 }
-
-
 /**
 hover effect remove
 **/
 
 figure.effect-steve {
-	z-index: auto;
-	overflow: visible;
-	background: #000;
+    z-index: auto;
+    overflow: visible;
+    background: #000;
 }
 
 figure.effect-steve:before,
 figure.effect-steve h2:before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	width: 100%;
-	height: 100%;
-	background: #000;
-	content: '';
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    content: '';
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
 }
 
 figure.effect-steve:before {
-	box-shadow: 0 3px 30px rgba(0,0,0,0.8);
-	opacity: 0;
+    box-shadow: 0 3px 30px rgba(0, 0, 0, 0.8);
+    opacity: 0;
 }
 
 figure.effect-steve figcaption {
-	z-index: 1;
+    z-index: 1;
 }
 
 figure.effect-steve img {
-	opacity: 1;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: perspective(1000px) translate3d(0,0,0);
-	transform: perspective(1000px) translate3d(0,0,0);
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: perspective(1000px) translate3d(0, 0, 0);
+    transform: perspective(1000px) translate3d(0, 0, 0);
 }
 
 figure.effect-steve h2,
 figure.effect-steve p {
-	background: #fff;
-	color: #2d434e;
+    background: #fff;
+    color: #2d434e;
 }
 
 figure.effect-steve h2 {
-	position: relative;
-	margin-top: 2em;
-	padding: 0.25em;
+    position: relative;
+    margin-top: 2em;
+    padding: 0.25em;
 }
 
 figure.effect-steve h2:before {
-	box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 figure.effect-steve p {
-	margin-top: 1em;
-	padding: 0.5em;
-	font-weight: 800;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: scale3d(0.9,0.9,1);
-	transform: scale3d(0.9,0.9,1);
+    margin-top: 1em;
+    padding: 0.5em;
+    font-weight: 800;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale3d(0.9, 0.9, 1);
+    transform: scale3d(0.9, 0.9, 1);
 }
 
 figure.effect-steve:hover:before {
-	opacity: 1;
+    opacity: 1;
 }
 
 figure.effect-steve:hover img {
-	-webkit-transform: perspective(1000px) translate3d(0,0,21px);
-	transform: perspective(1000px) translate3d(0,0,21px);
+    -webkit-transform: perspective(1000px) translate3d(0, 0, 21px);
+    transform: perspective(1000px) translate3d(0, 0, 21px);
 }
 
 figure.effect-steve:hover h2:before {
-	opacity: 0;
+    opacity: 0;
 }
 
 figure.effect-steve:hover p {
-	opacity: 1;
-	-webkit-transform: scale3d(1,1,1);
-	transform: scale3d(1,1,1);
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
 }

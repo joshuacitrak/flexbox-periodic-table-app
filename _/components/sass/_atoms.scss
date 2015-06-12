@@ -42,6 +42,18 @@ p{
     font-size:16px;
     font-size: 1.6rem; /* 16 ÷ $rembase */
 }
+a
+{
+    text-decoration: underline;
+    color:$ltbluepurple;
+     @include transition(all .35s ease-in-out);
+    &:hover, &:focus
+    {
+        color:$dkbluepurple;
+        text-decoration: none;
+         @include transition(all .35s ease-in-out);
+    }
+}
 header
 {
     position:relative;
@@ -49,6 +61,7 @@ header
 
 button
 {
+    font-family: 'Asap', sans-serif;
     @include background($black);
     color: $ltgrey;
      font-size:16px;

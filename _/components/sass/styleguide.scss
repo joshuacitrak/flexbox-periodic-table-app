@@ -1,0 +1,294 @@
+//STYLE GUIDE SPECIFIC STYLES ONLY
+////////////////////////////////////////////////////////
+//In page order appearance with label styles 1st
+// 1. COLORS
+//2. FONTS
+// 3. TYPE
+// 4. BUTTONS
+// 5. ELEMENTS
+// 6. LIST TABLES
+// 7. MODALS
+@import "compass";
+@import "compass/reset";
+@import "susy";
+@import 'foundation/components/buttons';
+@import 'foundation/components/clearing';
+@import 'foundation/components/panels';
+@import 'foundation/components/progress-bars';
+@import 'foundation/components/reveal';
+@import 'foundation/components/tooltips';
+@import 'foundation/components/offcanvas';
+@import 'foundation/components/visibility';
+@import 'breakpoint';
+@import "variables";
+@import "mixins";
+@import "atoms";
+@import "molecules";
+@import "organisms";
+.sg-content-container {
+    @include container();
+    @media (min-width: $screen-sm) {
+        @include container($screen-sm);
+    }
+    @media (min-width: $screen-md) {
+        @include container($screen-md);
+    }
+    @media (min-width: $screen-lg) {
+        @include container($screen-lg);
+    }
+    @media (min-width: $screen-xl) {
+        @include container($screen-xl);
+    }
+}
+
+header {
+    margin: $margin-sm-px 0 5px $margin-sm-px;
+    margin: $margin-sm-rem 0 .5rem $margin-sm-rem;
+}
+
+p {
+    margin-bottom: 5px;
+}
+
+.sg-content {
+    margin: $margin-sm-px 0 5px $margin-sm-px;
+    margin: $margin-sm-rem 0 .5rem $margin-sm-rem;
+    @include clearfix;
+    .sg-label {
+        display: inline-block;
+        font-size: 13px;
+        font-size: 1.3rem;
+        font-style: $font-italic;
+    }
+    hr.sg-divider {
+        width: 35%;
+        color: $dkgrey;
+        margin: 5px 0 10px 0;
+        margin: .5rem 0 1rem 0;
+    }
+}
+
+//////////////////////////////////////////////
+/////////// COLORS
+/////////////////////////////////////////////
+.sg-color-box-container {
+    @include content-box-rounded(150px, 225px, $white, $ltgrey, $box-radius);
+    float: left;
+    @include clearfix;
+    padding: 5px;
+    padding: .5rem;
+    .ltgrey {
+        @include content-box-rounded(140px, 140px, $ltgrey, $ltgrey, $box-radius);
+    }
+    .mdgrey {
+        @include content-box-rounded(140px, 140px, $mdgrey, $mdgrey, $box-radius);
+    }
+    .dkgrey {
+        @include content-box-rounded(140px, 140px, $dkgrey, $dkgrey, $box-radius);
+    }
+    .white {
+        @include content-box-rounded(140px, 140px, $white, $white, $box-radius);
+    }
+    .black {
+        @include content-box-rounded(140px, 140px, $black, $black, $box-radius);
+    }
+    .ltblue {
+        @include content-box-rounded(140px, 140px, $ltblue, $ltblue, $box-radius);
+    }
+    .dkblue {
+        @include content-box-rounded(140px, 140px, $dkblue, $dkblue, $box-radius);
+    }
+    .ltpink {
+        @include content-box-rounded(140px, 140px, $ltpink, $ltpink, $box-radius);
+    }
+    .dkpink {
+        @include content-box-rounded(140px, 140px, $dkpink, $dkpink, $box-radius);
+    }
+    .ltgreen {
+        @include content-box-rounded(140px, 140px, $ltgreen, $ltgreen, $box-radius);
+    }
+    .dkgreen {
+        @include content-box-rounded(140px, 140px, $dkgreen, $dkgreen, $box-radius);
+    }
+    .ltred {
+        @include content-box-rounded(140px, 140px, $ltred, $ltred, $box-radius);
+    }
+    .dkred {
+        @include content-box-rounded(140px, 140px, $dkred, $dkred, $box-radius);
+    }
+    .ltyellow {
+        @include content-box-rounded(140px, 140px, $ltyellow, $ltyellow, $box-radius);
+    }
+    .dkyellow {
+        @include content-box-rounded(140px, 140px, $dkyellow, $dkyellow, $box-radius);
+    }
+    .ltpurple {
+        @include content-box-rounded(140px, 140px, $ltpurple, $ltpurple, $box-radius);
+    }
+    .dkpurple {
+        @include content-box-rounded(140px, 140px, $dkpurple, $dkpurple, $box-radius);
+    }
+    .ltorange {
+        @include content-box-rounded(140px, 140px, $ltorange, $ltorange, $box-radius);
+    }
+    .dkorange {
+        @include content-box-rounded(140px, 140px, $dkorange, $dkorange, $box-radius);
+    }
+    .ltbluepurple {
+        @include content-box-rounded(140px, 140px, $ltbluepurple, $ltbluepurple, $box-radius);
+    }
+    .dkbluepurple {
+        @include content-box-rounded(140px, 140px, $dkbluepurple, $dkbluepurple, $box-radius);
+    }
+    .ltgreenyellow {
+        @include content-box-rounded(140px, 140px, $ltgreenyellow, $ltgreenyellow, $box-radius);
+    }
+    .dkgreenyellow {
+        @include content-box-rounded(140px, 140px, $dkgreenyellow, $dkgreenyellow, $box-radius);
+    }
+    .ltbrownred {
+        @include content-box-rounded(140px, 140px, $ltbrownred, $ltbrownred, $box-radius);
+    }
+    .dkbrownred {
+        @include content-box-rounded(140px, 140px, $dkbrownred, $dkbrownred, $box-radius);
+    }
+    p.sg-color-box-label {
+        display: inline-block;
+        color: $black;
+        font-size: 18px;
+        font-size: 1.8rem;
+        /* 18 ÷ $rembase */
+        
+        line-height: 1.444;
+        /* $line-height-base ÷ 18 */
+        
+        padding-top: 150px;
+    }
+}
+
+//////////////////////////////////////////////
+/////////// FONTS
+/////////////////////////////////////////////
+.fonts {
+    font-weight: normal;
+}
+
+.main-font,
+.main-font-bold,
+.main-font-italic {
+    font-family: "Asap";
+}
+
+.main-font-bold {
+    font-weight: bold;
+}
+
+.main-font-italic {
+    font-style: italic;
+}
+
+.secondary-font,
+.secondary-font-bold,
+.secondary-font-italic {
+    font-family: "Roboto Slab";
+}
+
+.secondary-font-bold {
+    font-weight: bold;
+}
+
+.secondary-font-italic {
+    font-style: italic;
+}
+
+//////////////////////////////////////////////
+/////////// TYPE
+/////////////////////////////////////////////
+//////////////////////////////////////////////
+/////////// BUTTONS
+/////////////////////////////////////////////
+.btn-active {
+    background: #292929;
+    color: white;
+}
+
+//////////////////////////////////////////////
+/////////// ELEMENTS
+/////////////////////////////////////////////
+.sg-span {
+    width: 140px;
+    height: 140px;
+}
+
+.symbol-label-wrapper {
+    .symbol {
+        text-align: center;
+        padding-top: 30%;
+        font-size: 29px;
+        font-size: 2.9rem;
+        font-weight: bold;
+        line-height: 1;
+        @include transition(all .35s ease-in-out);
+    }
+} //symbol-balel-wrapper
+.name-label-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    .name, .weight {
+        line-height: .8;
+        @include transition(all .35s ease-in-out);
+    }
+    .name {
+        font-style: italic;
+        font-size: 14px;
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+        margin-bottom: 1.2rem;
+    }
+    .weight {
+        font-size: 8px;
+        font-size: .8rem;
+    }
+} //name label wrapper
+.number-label-wrapper {
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    .number {
+        line-height: .8;
+        font-size: 18px;
+        font-size: 1.8rem;
+        @include transition(all .35s ease-in-out);
+    }
+}
+
+.electron-label-wrapper {
+    position: absolute;
+    top: 10%;
+    right: 4%;
+    .electron {
+        font-size: 10px;
+        font-size: 1rem;
+        margin-bottom: 0;
+        line-height: 1;
+    }
+}
+
+.list-table {
+    @include inner-table-borders(1px, $ltgrey);
+    @include outer-table-borders(2px, $dkgrey);
+    border-radius: $box-radius;
+    width: 80%;
+    .list-table-header {
+        font-size: 26px;
+        font-size: 2.6rem;        
+        line-height: 1;
+    }
+    .list-table-content
+    {
+        font-size: 16px;
+        font-size:1.6rem;
+        padding:12px 6.25px;//same as default
+        padding:1.2rem 0.625rem;
+    }
+}//list-table
