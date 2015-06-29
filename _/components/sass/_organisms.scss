@@ -15,6 +15,7 @@
             @include nested(3) {
                 @include span(1 of 3);
             }
+            position:relative;
             color:$mdgrey;
             text-align:center;
             margin:0 auto;
@@ -118,76 +119,6 @@ header {
             padding: 3px 3px 3px 17px;
             line-height: .3;
         }
-        .symbol-label-wrapper {
-            .symbol {
-                text-align: center;
-                padding-top: 30%;
-                font-size: 29px;
-                ;
-                font-size: 2.9rem;
-                font-weight: bold;
-                line-height: 1;
-                @include transition(all .35s ease-in-out);
-            }
-        } //symbol-balel-wrapper
-        .name-label-wrapper {
-            margin: 0 auto;
-            text-align: center;
-            .name, .weight {
-                line-height: .8;
-                @include transition(all .35s ease-in-out);
-            }
-            .name {
-                font-style: italic;
-                font-size: 13px;
-                font-size: 1.3rem;
-                margin-bottom: 12px;
-                margin-bottom: 1.2rem;
-            }
-            .weight {
-                font-size: 8px;
-                font-size: .8rem;
-            }
-        } //name label wrapper
-        .number-label-wrapper {
-            position: absolute;
-            top: 4%;
-            left: 4%;
-            .number {
-                line-height: .8;
-                font-size: 18px;
-                font-size: 1.8rem;
-                @include transition(all .35s ease-in-out);
-            }
-        } //number label wrapper
-        .electron-label-wrapper {
-            position: absolute;
-            top: 10%;
-            right: 4%;
-            .electron {
-                font-size: 10px;
-                font-size: 1rem;
-                margin-bottom: 0;
-                line-height: 1;
-            }
-        } //electron-label-wrapper
-        .list-table {
-            @include inner-table-borders(1px, $ltgrey);
-            @include outer-table-borders(2px, $dkgrey);
-            border-radius: $box-radius;
-            width: 80%;
-            .list-table-header {
-                font-size: 26px;
-                font-size: 2.6rem;
-                line-height: 1;
-            }
-            .list-table-content {
-                font-size: 16px;
-                font-size: 1.6rem;
-                padding: 12px 6.25px; //same as default
-                padding: 1.2rem 0.625rem;
-            }
-        } //list-table
         @include container();
         @media (min-width: $screen-sm) {
             @include container($screen-sm);
@@ -212,6 +143,144 @@ header {
         z-index: 32;
     }
 }
+
+.list-table-wrapper
+{
+    margin: $margin-lg-px $margin-sm-px;
+    margin: $margin-lg-rem $margin-sm-rem;
+    @media (min-width: 1028px) {
+        margin: $margin-lg-px $margin-lg-px;
+        margin: $margin-lg-rem $margin-lg-rem;
+    }
+    @include container();
+        @media (min-width: $screen-sm) {
+            @include container($screen-sm);
+        }
+        @media (min-width: $screen-md) {
+            @include container($screen-md);
+        }
+        @media (min-width: $screen-lg) {
+            @include container($screen-lg);
+        }
+        @media (min-width: $screen-xl) {
+            @include container($screen-xl);
+        }
+    .list-table {
+    @include inner-table-borders(1px, $ltgrey);
+    @include outer-table-borders(2px, $dkgrey);
+    border-radius: $box-radius;
+    width: 80%;
+    .list-table-header {
+        font-size: 26px;
+        font-size: 2.6rem;
+        line-height: 1;
+    }
+    .list-table-content {
+        font-size: 16px;
+        font-size: 1.6rem;
+        padding: 12px 6.25px; //same as default
+        padding: 1.2rem 0.625rem;
+    }
+} //list-table
+}//list-table-wrapper
+
+.contact
+{
+    @include clearfix;
+    margin:0 auto;
+    .contact-list
+    {
+        width:258px;
+        margin:0 auto;
+        .contact-list-item
+        {
+            margin-right: 12px;
+            float:right;
+            width:42px;
+            height:42px;
+            cursor: pointer;
+            
+            &:last-child
+            {
+                margin-right:0;
+            }
+        }
+        .email-item
+        {
+            @include background(url(../../images/pencil42_lt.svg));
+            &:hover{
+                @include background(url(../../images/pencil42_dk.svg));
+            }
+        }
+        .facebook-item
+        {
+            @include background(url(../../images/facebook29_lt.svg));
+             &:hover{
+                 @include background(url(../../images/facebook29_dk.svg));
+             }
+        }
+        .twitter-item
+        {
+            @include background(url(../../images/twitter21_lt.svg));
+            &:hover{
+                @include background(url(../../images/twitter21_dk.svg));
+            }
+        }
+        .linkedin-item
+        {
+            @include background(url(../../images/linkedin12_lt.svg));
+            &:hover
+            {
+                 @include background(url(../../images/linkedin12_dk.svg));
+            }
+        }
+        .gplus-item
+        {
+            @include background(url(../../images/google29_lt.svg));
+            &:hover
+            {
+                @include background(url(../../images/google29_dk.svg));
+            }
+        }
+    }
+    @include container();
+        @media (min-width: $screen-sm) {
+            @include container($screen-sm left);
+        }
+        @media (min-width: $screen-md) {
+            @include container($screen-md center);
+        }
+        @media (min-width: $screen-lg) {
+            @include container($screen-lg center);
+        }
+        @media (min-width: $screen-xl) {
+            @include container($screen-xl center);
+        }
+}//contact
+
+.copyright
+{
+    margin-top:8px;
+     @include container();
+        @media (min-width: $screen-sm) {
+            @include container($screen-sm left);
+        }
+        @media (min-width: $screen-md) {
+            @include container($screen-md center);
+        }
+        @media (min-width: $screen-lg) {
+            @include container($screen-lg center);
+        }
+        @media (min-width: $screen-xl) {
+            @include container($screen-xl center);
+        }
+    p{
+        text-align: center;
+        font-size:11px;
+         line-height: 1.444;
+    }
+        
+}//copyright
 /**
 hover effect remove
 **/

@@ -7,6 +7,7 @@
     //width: 60px!important;
     // height: 80px!important;
     margin: 0 auto;
+    position: relative;
     @media (min-width: $screen-sm) {
         width: 80px!important;
         height: 100px!important;
@@ -23,10 +24,44 @@
     }
 }
 
-.legend-symbol,
-.legend-name,
-.legend-weight, .legend-number {
+.legend-desc {
+    position: absolute;
+    display: inline-block;
     color: $ltgrey;
+}
+
+.symbol-desc {
+    top: 53px;
+    left: 60%;
+}
+
+.name-desc {
+    top: 80px;
+    left: 60%;
+}
+
+.weight-desc {
+    top: 100px;
+    right: 60%;
+}
+
+.number-desc {
+    top: 25px;
+    right: 60%;
+}
+
+.electron-desc {
+    top: 25px;
+    left: 60%;
+}
+
+.legend-symbol {
+    text-align: center;
+    padding-top: 30%;
+    font-size: 29px;
+    font-size: 2.9rem;
+    font-weight: bold;
+    line-height: 1;
 }
 
 .legend-name {
@@ -34,12 +69,93 @@
     font-size: 8px;
     font-size: .8rem;
 }
+
 .legend-weight {
     font-size: 8px;
     font-size: .8rem;
 }
 
-
+.symbol-label-wrapper {
+    .symbol, .legend-symbol {
+        text-align: center;
+        padding-top: 30%;
+        font-size: 20px;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 1;
+        @media (min-width: $screen-md) {
+            font-size: 27px;
+            font-size: 2.7rem;
+        }
+        @media (min-width: $screen-lg) {
+            font-size: 29px;
+            font-size: 2.9rem;
+        }
+    }
+} //symbol-balel-wrapper
+.name-label-wrapper {
+    margin: 0 auto;
+    text-align: center;
+    .name, .weight, .legend-name, .legend-weight {
+        line-height: .8;
+    }
+    .name,
+    .legend-name {
+        font-style: italic;
+        font-size: 13px;
+        font-size: 1.3rem;
+        margin-bottom: 12px;
+        margin-bottom: 1.2rem;
+    }
+    .weight,
+    .legend-weight {
+        font-size: 8px;
+        font-size: .8rem;
+    }
+} //name label wrapper
+.number-label-wrapper {
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    .number, .legend-number {
+        line-height: .8;
+        font-size: 18px;
+        font-size: 1.8rem;
+    }
+} //number label wrapper
+.electron-label-wrapper {
+    position: absolute;
+    top: 10%;
+    right: 4%;
+    .electron, .legend-electron {
+        font-size: 10px;
+        font-size: 1rem;
+        margin-bottom: 0;
+        line-height: 1;
+    }
+} //electron-label-wrapper
+//START TRANSITIONS FOR PT LABELS
+.symbol-label-wrapper {
+    .symbol {
+        @include transition(all .35s ease-in-out);
+    }
+} //symbol-balel-wrapper
+.name-label-wrapper {
+    .name, .weight {
+        @include transition(all .35s ease-in-out);
+    }
+} //name label wrapper
+.number-label-wrapper {
+    .number {
+        @include transition(all .35s ease-in-out);
+    }
+} //number label wrapper
+.electron-label-wrapper {
+    .electron {
+        @include transition(all .35s ease-in-out);
+    }
+} //electron-label-wrapper
+//END TRANSISTIONS
 .span1,
 .span1-last {
     height: $box-height;
@@ -81,6 +197,7 @@
         @include transition(all .35s ease-in-out);
         @include transform(scale3d(0.9, 0.9, 1));
     }
+    overflow: hidden;
     min-height: $box-min-height-xs;
     @media (min-width: $screen-sm) {
         min-height: $box-min-height-sm;
@@ -197,122 +314,6 @@
     }
 }
 
-.box,
-.box1,
-.box2,
-.box3,
-.box4,
-.box5,
-.box6,
-.box7,
-.box8,
-.box9,
-.box10,
-.box11 {
-    @include flex(1 0);
-    @include background($white);
-    min-width: $box-min-width-xs; //all boxes should have these min/maxes
-    max-width: $box-max-width-xs;
-    min-height: $box-min-height-xs;
-    @media (min-width: $screen-sm) {
-        min-width: $box-min-width-sm; //all boxes should have these min/maxes
-        max-width: $box-max-width-sm;
-        min-height: $box-min-height-sm;
-    }
-    @media (min-width: $screen-md) {
-        min-width: $box-min-width-md; //all boxes should have these min/maxes
-        max-width: $box-max-width-md;
-        min-height: $box-min-height-md;
-    }
-    @media (min-width: $screen-lg) {
-        min-width: $box-min-width-lg; //all boxes should have these min/maxes
-        max-width: $box-max-width-lg;
-        min-height: $box-min-height-lg;
-    }
-    @media (min-width: $screen-xl) {
-        min-width: $box-min-width-xl; //all boxes should have these min/maxes
-        max-width: $box-max-width-xl;
-        min-height: $box-min-height-xl;
-    }
-    margin:1px;
-    cursor:pointer;
-    @include opacity(.85);
-    @include transition(all .35s ease-in-out);
-    @include transform(perspective(1000px) translate3d(0,
-    0,
-    0));
-    &:hover {
-        @include opacity(1);
-        @include transform(perspective(1000px) translate3d(0, 0, 21px));
-        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
-    }
-}
-/*non-metails*/
-
-.box {
-    @include content-box-rounded($box-width, $box-height, $dkgreenyellow, darken($dkgreenyellow, 10), $box-radius);
-}
-/*noble gasses*/
-
-.box1 {
-    @include content-box-rounded($box-width, $box-height, $ltblue, darken($ltblue, 10), $box-radius);
-}
-/*alkali metails*/
-
-.box2 {
-    @include content-box-rounded($box-width, $box-height, $dkred, darken($dkred, 10), $box-radius);
-}
-/*alkal-earth*/
-
-.box3 {
-    @include content-box-rounded($box-width, $box-height, $dkbrownred, darken($dkbrownred, 10), $box-radius);
-}
-/*basic-metails*/
-
-.box4 {
-    @include content-box-rounded($box-width, $box-height, $dkpurple, darken($dkpurple, 10), $box-radius);
-}
-/*semi-metails*/
-
-.box5 {
-    @include content-box-rounded($box-width, $box-height, $ltpurple, darken($ltpurple, 10), $box-radius);
-}
-/*halogen*/
-
-.box6 {
-    @include content-box-rounded($box-width, $box-height, $dkgreen, darken($dkgreen, 10), $box-radius);
-}
-/*transition-metails*/
-
-.box7 {
-    @include content-box-rounded($box-width, $box-height, $ltyellow, darken($ltyellow, 10), $box-radius);
-}
-/*lanthanide*/
-
-.box8 {
-    @include content-box-rounded($box-width, $box-height, $ltred, darken($ltred, 10), $box-radius);
-}
-/*actinide*/
-
-.box9 {
-    @include content-box-rounded($box-width, $box-height, $dkpink, darken($dkpink, 10), $box-radius);
-}
-/*metaliods*/
-
-.box10 {
-    @include content-box-rounded($box-width, $box-height, $ltgreen, darken($ltgreen, 10), $box-radius);
-}
-/*lan-act-spacers*/
-
-.box11 {
-    @include content-box-rounded($box-width, $box-height, $ltpink, darken($ltpink, 10), $box-radius);
-}
-/*lan-act-spacers*/
-
-.box12 {
-    @include content-box-rounded(100%, 100%, $ltpink, darken($ltpink, 10), $box-radius);
-}
-
 .divider {
     border: none;
     margin: $margin-sm-px 0;
@@ -344,30 +345,46 @@
     }
 }
 
-.icon-btn
-{
+.icon-btn {
     //color:$black; // put a piece of text in here to force btn height == to text btns
-    
-    &:before
-    {
+    &:before {
         //content:"\00a0"; // put a piece of text in here to force btn height == to text btns
     }
-    
-    &:hover, &:focus, &:visited
-    {
+    &:hover,
+    &:focus,
+    &:visited {
         @include transition(all .35s ease-in-out);
-        outline:none; //why? when this is already in resets?
+        outline: none; //why? when this is already in resets?
         //color:lighten($black, 10%);
     }
-    &:visited
-    {
+    &:visited {
         @include background($black);
     }
 }
 
-.show-for-sr
-{
+.show-for-sr {
     position: absolute !important;
-   top: -9999px !important;
-   left: -9999px !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+
+.search-input {
+    width: 250px !important; //stupid foundation
+    height: 40px !important;
+    float: left !important;
+    margin-right: 2px !important;
+    font-family: 'Asap', sans-serif !important;
+    font-size: 16px !important;
+    font-size: 1.6rem !important;
+    &:focus
+    {
+        background   : rgba(0,0,0,.1) !important;
+    }
+}
+
+.sort-label
+{
+      display: inline-block;
+  font-size: 1.6rem;
+  margin: 0 12px 0 24px;
 }

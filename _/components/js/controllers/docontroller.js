@@ -1,20 +1,22 @@
 app.controller('DataObjectController', function($scope, $rootScope, $http, jsondata)
 {
     $scope.data = {};
-    $scope.ptTable ={};
+    $scope.ptElements ={};
     
    jsondata.success(
 				function(data, status, headers, config) {
                 $scope.data = data;
                     
                     prepareData = function(){
+                        var elements=[];
                        for(var i = 0; i< $scope.data.table.length; i++)
                         {
-                            //console.log($scope.data.table[i]);
-                            var elements=[];
+                           // console.log($scope.data.table[i]);
+                            //console.log(i + " indecx");
                             for(var j = 0;  j<$scope.data.table[i].elements.length; j++)
                             {
                                  //console.log($scope.data.table[i].elements[j]);
+                                //console.log($scope.data.table[i].elements[j].name + " name ");
 
                                 var element = {
                                     "group": $scope.data.table[i].elements[j].group,
@@ -33,7 +35,9 @@ app.controller('DataObjectController', function($scope, $rootScope, $http, jsond
                                 });
                             };
                         }
-                        console.log("moving on");
+                        //console.log("moving on");
+                        //console.log(elements);
+                        //console.log("-----------------------");
                         for(var h = 0; h< $scope.data.lanthanoids.length;h++)
                         {
                             var element = {
@@ -52,7 +56,7 @@ app.controller('DataObjectController', function($scope, $rootScope, $http, jsond
                                         "index":h
                                 });
                         }
-                         console.log("moving on 2");
+                         //console.log("moving on 2");
                         for(var k = 0; k< $scope.data.lanthanoids.length;k++)
                         {
                             var element = {
@@ -71,7 +75,8 @@ app.controller('DataObjectController', function($scope, $rootScope, $http, jsond
                                         "index":k
                                 });
                         }
-                        console.log("done");
+                        $scope.ptElements = elements;
+                        //console.log("done ");
                         //dataReady();
                     };//preparedata
                     

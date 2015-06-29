@@ -47,16 +47,24 @@
             <!-- whatever you want goes here -->
             <div class="off-canvas-legend-item"><img src="images/one42.svg" alt="single tap" /> <span class="legend-text">=</span><img src="images/34.svg" alt="element" /></div>
             <div class="off-canvas-legend-item">
+                <p class="legend-desc symbol-desc">Symbol</p>
+                 <p class="legend-desc name-desc">Name</p>
+                 <p class="legend-desc weight-desc">Weight</p>
+                 <p class="legend-desc number-desc">Number</p>
+                 <p class="legend-desc electron-desc">Electrons</p>
                  <div class="legend-pt-box">
                <div class="symbol-label-wrapper">
-                   <p class="legend-symbol">Symbol</p>
+                   <p class="legend-symbol">He</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="legend-name">Name</p>
-                    <p class="legend-weight">Weight</p>
+                    <p class="legend-name">Helium</p>
+                    <p class="legend-weight">4.002602</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="legend-number">Number</p>
+                    <p class="legend-number">2</p>
+                </div>
+                <div class="electron-label-wrapper">
+                    <p class="legend-electron">2</p><!--ng repeat this-->
                 </div>
             </div>
             </div>
@@ -66,7 +74,7 @@
        <nav>
            <button class="btn icon-btn" ng-click="legendOpenClose()"><span class="show-for-sr">Help</span><i class="fa fa-question"></i></button>
            <button class="btn icon-btn" ng-click="switchView()"><span class="show-for-sr">Periodic Table view</span><i class="fa fa-th"></i></button>
-           <button class="btnicont-btn" ng-click="switchView()"><span class="show-for-sr">Elements List view</span><i class="fa fa-list"></i></button>
+           <button class="btn icon-btn" ng-click="switchView()"><span class="show-for-sr">Elements List view</span><i class="fa fa-list"></i></button>
        </nav>
    </div>
    
@@ -120,7 +128,7 @@
         <div class="focus-wrapper">
             <div class="flexrow">
                 <div class="box-wrapper-start">
-                    <div class="box focus-box">{{currentElement.symbol}}</div>
+                    <div class="pt-box-1 focus-box">{{currentElement.symbol}}</div>
                     <div class="focus-box-content">
                         <p class="focus-atomic-number">{{currentElement.number}}</p>
                         <p class="focus-name">{{currentElement.name}}</p>
@@ -134,6 +142,10 @@
 
     </section>
     <!--focus-->
+    
+    <div ngview>
+        
+    </div>
 
     <!-- PT begin-->
 
@@ -1783,6 +1795,7 @@
         <!--pt-content-->
 
     </section>
+   
     
     <footer>
     <section class="contact">

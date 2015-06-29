@@ -1,0 +1,31 @@
+<section class="list-table-wrapper clearfix">
+       <form action="">
+           <input class="search-input" type="text" value="Search" ng-init="direction=''" ng-model="query" placeholder="Seach the elements">
+           <button class="btn icon-btn" ng-click=""><span class="show-for-sr">Search</span><i class="fa fa-search"></i></button>
+           <label class="sort-label" for="">Sort by:</label>
+           <input id="dirascending" type="radio" ng-model="direction" name ="direction" value="">
+           <label for="dirascending">Ascending</label>
+           <input id="dirdescending" type="radio" ng-model="direction" name="direction" value="reverse">
+           <label for="dirdescending">Descending</label>
+           </form>
+        <table class="list-table">
+               <thead ng-init="order='element.number'" ng-model="order">
+                   <tr>
+                       <th class="list-table-header"><a href="" ng-click="order='element.name'">Name</a></th>
+                       <th class="list-table-header"><a href="" ng-click="order='element.symbol'">Symbol</a></th>
+                       <th class="list-table-header"><a href="" ng-click="order='element.number'">Atomic Number</a></th>
+                       <th class="list-table-header"><a href="" ng-click="order='element.molar'">Atomic Mass</a></th>
+                       <th class="list-table-header"><a href="" ng-click="order='element.group'">Group</a></th>
+                   </tr>
+                    </thead>
+                   <tr ng-repeat="(key, value) in ptElements | orderBy: order:direction | filter:{$:query}">
+                        <td class="list-table-content"><a href="{{value.element.url}}" target="_blank">{{value.element.name}}</a></td><!--name-->
+                       <td class="list-table-content">{{value.element.symbol}}</td><!--symbol-->
+                       <td class="list-table-content">{{value.element.number}}</td><!--number-->
+                       <td class="list-table-content">{{value.element.molar}}</td><!--weight-->
+                       <td class="list-table-content">{{value.element.group}}</td><!--group-->
+                   </tr><!--ng repeat this --> 
+              
+           </table>
+    </section>
+    
