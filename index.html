@@ -71,8 +71,8 @@
             <div class="off-canvas-legend-item"><img src="images/one62.svg" alt="double tap" /><span class="legend-text">=</span><img class="wiki" src="images/Wikipedia_logo.svg" alt="wikipedia" /></div>
            </aside>
        </section>
-       <nav ng-controller ="EventsController as evtCtrl">
-           <button class="btn icon-btn" ng-class="{ active: true}" ng-click="legendOpenClose()"><span class="show-for-sr">Help</span><i class="fa fa-question"></i></button>
+       <nav>
+           <button class="btn icon-btn" ng-click="legendOpenClose()"><span class="show-for-sr">Help</span><i class="fa fa-question"></i></button>
            <button class="btn icon-btn" ng-click="switchView('/chart')"><span class="show-for-sr">Periodic Table view</span><i class="fa fa-th"></i></button>
            <button class="btn icon-btn" ng-click="switchView('/list')"><span class="show-for-sr">Elements List view</span><i class="fa fa-list"></i></button>
        </nav>

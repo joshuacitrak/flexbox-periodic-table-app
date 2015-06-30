@@ -1,8 +1,5 @@
 app.controller('EventsController', function($scope, $rootScope, $http, $routeParams, $location, jsondata)
 {
-$scope.isLegendOpen = false;
- $scope.order ='number';
-$scope.direction=null;
    jsondata.success(
 				function(data, status, headers, config) {
                 
@@ -24,18 +21,7 @@ $scope.direction=null;
                         //console.log("HOVER OUT"+ $(this));
                          //$(".has-tip").empty();
                         //added tooltip <span data-tooltip data-options="hover_delay: 50;" class="has-tip" title="Tooltips are awesome, you should totally use them!">...</span>
-                    };   //hover hanlders      
-                    
-                    function testing()
-                    {
-                        console.log("testing 123");
-                    };
-                    
-                    function switchView()
-                    {
-                        console.log("switchView");
-                        $location.path(path);
-                    };                    
+                    };   //hover hanlders                      
                     
                 }).error(function(data, status, headers, config) {
 			alert('data could not be loaded. epic fail.');

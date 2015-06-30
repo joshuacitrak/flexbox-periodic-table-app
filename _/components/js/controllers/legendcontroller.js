@@ -1,6 +1,8 @@
 app.controller('LegendController', function($scope, $rootScope, $location, $routeParams, $http, jsondata)
 {
     $scope.isLegendOpen = false;
+ $scope.order ='number';
+$scope.direction=null;
    jsondata.success(
 				function(data, status, headers, config) {
                    $scope.legendOpenClose = function()
