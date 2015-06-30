@@ -3694,15 +3694,15 @@ header {
     z-index: 32; }
 
 .list-table-wrapper {
-  margin: 48px 24px;
-  margin: 4.8rem 2.4rem;
+  margin: 48px 0 48px 24px;
+  margin: 4.8rem 0 4.8rem 2.4rem;
   max-width: 768px;
   margin-left: auto;
   margin-right: auto; }
   @media (min-width: 1028px) {
     .list-table-wrapper {
-      margin: 48px 48px;
-      margin: 4.8rem 4.8rem; } }
+      margin: 48px 0 48px 48px;
+      margin: 4.8rem 0 4.8rem 4.8rem; } }
   .list-table-wrapper:after {
     content: " ";
     display: block;
@@ -3711,7 +3711,8 @@ header {
     .list-table-wrapper {
       max-width: 910px;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      margin-right: 0; }
       .list-table-wrapper:after {
         content: " ";
         display: block;
@@ -3720,7 +3721,8 @@ header {
     .list-table-wrapper {
       max-width: 1028px;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      margin-right: 0; }
       .list-table-wrapper:after {
         content: " ";
         display: block;
@@ -3729,7 +3731,8 @@ header {
     .list-table-wrapper {
       max-width: 1290px;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      margin-right: 0; }
       .list-table-wrapper:after {
         content: " ";
         display: block;
@@ -3738,7 +3741,8 @@ header {
     .list-table-wrapper {
       max-width: 1600px;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      margin-right: 0; }
       .list-table-wrapper:after {
         content: " ";
         display: block;

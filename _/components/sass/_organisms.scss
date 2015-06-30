@@ -146,24 +146,28 @@ header {
 
 .list-table-wrapper
 {
-    margin: $margin-lg-px $margin-sm-px;
-    margin: $margin-lg-rem $margin-sm-rem;
+    margin: $margin-lg-px 0 $margin-lg-px $margin-sm-px;
+    margin: $margin-lg-rem 0 $margin-lg-rem $margin-sm-rem;
     @media (min-width: 1028px) {
-        margin: $margin-lg-px $margin-lg-px;
-        margin: $margin-lg-rem $margin-lg-rem;
+        margin: $margin-lg-px 0 $margin-lg-px $margin-lg-px;
+        margin: $margin-lg-rem 0 $margin-lg-rem $margin-lg-rem;
     }
     @include container();
         @media (min-width: $screen-sm) {
             @include container($screen-sm);
+            margin-right: 0;
         }
         @media (min-width: $screen-md) {
             @include container($screen-md);
+             margin-right: 0;
         }
         @media (min-width: $screen-lg) {
             @include container($screen-lg);
+             margin-right: 0;
         }
         @media (min-width: $screen-xl) {
             @include container($screen-xl);
+             margin-right: 0;
         }
     .list-table {
     @include inner-table-borders(1px, $ltgrey);
