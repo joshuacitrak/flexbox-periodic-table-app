@@ -1,4 +1,4 @@
-app.controller('LegendController', function($scope, $rootScope, $http, jsondata)
+app.controller('LegendController', function($scope, $rootScope, $location, $routeParams, $http, jsondata)
 {
     $scope.isLegendOpen = false;
    jsondata.success(
@@ -16,12 +16,13 @@ app.controller('LegendController', function($scope, $rootScope, $http, jsondata)
                         $scope.isLegendOpen = !$scope.isLegendOpen;
                     };
                     
-                    $scope.switchView = function()
+                    $scope.switchView = function(path)
                     {
                         if($scope.isLegendOpen)
                        {
                             $scope.legendOpenClose();
                        }
+                        $location.path(path);
                     };
                     
                 });    

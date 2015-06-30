@@ -20,7 +20,19 @@ app.factory('jsondata', function($http) {
 });
 
 **/
-	var app = angular.module('ptApp', [ 'ngAnimate', 'ngTouch', 'appControllers' ]);
+	var app = angular.module('ptApp', [ 'ngRoute', 'ngAnimate', 'ngTouch', 'appControllers' ]).config(
+			router);
+
+	function router($routeProvider, $locationProvider) {
+        $locationProvider.hashPrefix('!');
+		$routeProvider.when('/chart', {
+			templateUrl : 'partials/chart.html'
+		}).when('/list', {
+			templateUrl : 'partials/table.html'
+		}).otherwise({
+			redirectTo : '/chart'
+		});
+	}
     var appControllers = angular.module('appControllers', []);
 
 app.factory('jsondata', function($http) { 

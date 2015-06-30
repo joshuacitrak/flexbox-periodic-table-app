@@ -1,13 +1,10 @@
-app.controller('EventsController', function($scope, $rootScope, $http, jsondata)
+app.controller('EventsController', function($scope, $rootScope, $http, $routeParams, $location, jsondata)
 {
+$scope.isLegendOpen = false;
+ $scope.order ='number';
+$scope.direction=null;
    jsondata.success(
 				function(data, status, headers, config) {
-                    
-                    $scope.isLegendOpen = false;
-                     $scope.order ='number';
-                    $scope.direction=null;
-                   // console.log($scope.order + "order");
-                   // console.log($scope.order + "order");
                 
                     $(".pt-box").click(clickHandler);
                     $(".pt-box").hover(hoverHandlerIn, hoverHandlerOut);
@@ -29,13 +26,16 @@ app.controller('EventsController', function($scope, $rootScope, $http, jsondata)
                         //added tooltip <span data-tooltip data-options="hover_delay: 50;" class="has-tip" title="Tooltips are awesome, you should totally use them!">...</span>
                     };   //hover hanlders      
                     
-                    function legendOpenClose()
+                    function testing()
                     {
-                        //console.log("OPen/close");
-                        $scope.isLegendOpen === !$scope.isLegendOpen;
-                        //console.log($scope.isLegendOpen + " legend open status");
+                        console.log("testing 123");
                     };
                     
+                    function switchView()
+                    {
+                        console.log("switchView");
+                        $location.path(path);
+                    };                    
                     
                 }).error(function(data, status, headers, config) {
 			alert('data could not be loaded. epic fail.');
