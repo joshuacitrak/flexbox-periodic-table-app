@@ -3311,7 +3311,7 @@ button {
   -ms-transform: perspective(1000px) translate3d(0, 0, 0);
   -webkit-transform: perspective(1000px) translate3d(0, 0, 0);
   transform: perspective(1000px) translate3d(0, 0, 0);
-  overflow: hidden;
+  overflow-y: visible;
   min-height: 65px; }
   .pt-box:hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
@@ -3686,7 +3686,13 @@ header {
           clear: both; } }
 
 .focus {
-  position: relative; }
+  position: relative;
+  *zoom: 1; }
+  .focus:before, .focus:after {
+    content: " ";
+    display: table; }
+  .focus:after {
+    clear: both; }
   .focus .focus-wrapper {
     position: absolute;
     top: 5%;

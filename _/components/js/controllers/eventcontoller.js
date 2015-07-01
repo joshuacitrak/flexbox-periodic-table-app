@@ -1,10 +1,18 @@
 app.controller('EventsController', function($scope, $rootScope, $http, $routeParams, $location, jsondata)
 {
+    $scope.currentElement = {};
    jsondata.success(
 				function(data, status, headers, config) {
                 
                     $(".pt-box").click(clickHandler);
                     $(".pt-box").hover(hoverHandlerIn, hoverHandlerOut);
+                    
+                    $scope.currentElement.symbol = "Fu";
+                    $scope.currentElement.number= "00";
+                    $scope.currentElement.name = "Fubar";
+                    $scope.currentElement.molar = "0.00";
+                    $scope.currentElement.electrons = "[1, 2, 3, 4]"; 
+                    $scope.currentElement.group = "FB Group";
                     
                     function clickHandler(evt){
                         //console.log("CLICKED");

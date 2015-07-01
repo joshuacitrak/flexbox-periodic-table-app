@@ -136,6 +136,7 @@ header {
 } //pt-wrapper
 .focus {
     position: relative;
+    @include clearfix;
     .focus-wrapper {
         position: absolute;
         top: 5%;

@@ -185,6 +185,7 @@
     @include opacity(.85);
     @include transition(all .35s ease-in-out);
     @include transform(perspective(1000px) translate3d(0, 0, 0));
+    overflow-y:visible;
     &:hover {
         @include opacity(1);
         @include transform(perspective(1000px) translate3d(0, 0, 21px));
@@ -197,7 +198,6 @@
         @include transition(all .35s ease-in-out);
         @include transform(scale3d(0.9, 0.9, 1));
     }
-    overflow: hidden;
     min-height: $box-min-height-xs;
     @media (min-width: $screen-sm) {
         min-height: $box-min-height-sm;
