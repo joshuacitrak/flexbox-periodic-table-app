@@ -23,7 +23,7 @@
 
     </section>
     <!--focus-->
-    <section class="pt-wrapper clearfix" ng-controller="EventsController as evtCtrl">
+    <section class="pt-wrapper clearfix" ng-controller="DataObjectController as doCtrl">
 
         <div class="pt-content">
             <!--row 1-->
@@ -38,11 +38,11 @@
                     <h4 class="col-label">11A</h4>
                 </div>
                 <div class="name-label-wrapper">
-                    <p class="name hidden-for-small-only">{{name}}</p>
-                    <p class="weight hidden-for-small-only">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[0].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[0].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[0].element.number}}</p>
                 </div>
             </div>
 
@@ -56,11 +56,11 @@
                     <h4 class="col-label">8A</h4>
                 </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[1].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[1].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[1].element.number}}</p>
                 </div>
             </div>
             <!-- end row 1-->
@@ -74,11 +74,11 @@
                    <p class="symbol">Li</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[2].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[2].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[2].element.number}}</p>
                 </div>
             </div>
 
@@ -92,11 +92,11 @@
                     <h4 class="col-label">2A</h4>
                 </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[3].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[3].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[3].element.number}}</p>
                 </div>
             </div>
 
@@ -110,11 +110,11 @@
                     <h4 class="col-label">3A</h4>
                 </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[4].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[4].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[4].element.number}}</p>
                 </div>
             </div>
 
@@ -128,11 +128,11 @@
                     <h4 class="col-label">4A</h4>
                 </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[5].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[5].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[5].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-1">
@@ -145,11 +145,11 @@
                     <h4 class="col-label">5A</h4>
                 </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[6].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[6].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[6].element.number}}</p>
                 </div>
             </div>
 
@@ -163,11 +163,11 @@
                     <h4 class="col-label">6A</h4>
                 </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[7].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[7].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[7].element.number}}</p>
                 </div>
             </div>
 
@@ -181,11 +181,11 @@
                     <h4 class="col-label">7A</h4>
                 </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[8].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[8].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[8].element.number}}</p>
                 </div>
             </div>
             <div class="span1-last pt-box pt-box-2">
@@ -193,11 +193,11 @@
                    <p class="symbol">Ne</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[9].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[9].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[9].element.number}}</p>
                 </div>
             </div>
             <!--row-2-->
@@ -213,11 +213,11 @@
                    <p class="symbol">Na</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[10].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[10].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[10].element.number}}</p>
                 </div>
             </div>
 
@@ -226,11 +226,11 @@
                    <p class="symbol">Mg</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[11].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[11].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[11].element.number}}</p>
                 </div>
             </div>
 
@@ -239,11 +239,11 @@
                    <p class="symbol">Al</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[12].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[12].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[12].element.number}}</p>
                 </div>
             </div>
 
@@ -252,11 +252,11 @@
                    <p class="symbol">Si</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[13].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[13].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[13].element.number}}</p>
                 </div>
             </div>
 
@@ -265,11 +265,11 @@
                    <p class="symbol">P</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[14].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[14].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[14].element.number}}</p>
                 </div>
             </div>
 
@@ -278,11 +278,11 @@
                    <p class="symbol">S</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[15].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[15].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[15].element.number}}</p>
                 </div>
             </div>
 
@@ -291,11 +291,11 @@
                    <p class="symbol">Cl</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[16].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[16].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[16].element.number}}</p>
                 </div>
             </div>
 
@@ -304,11 +304,11 @@
                    <p class="symbol">Ar</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[17].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[17].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[17].element.number}}</p>
                 </div>
             </div>
             <!--row-3-->
@@ -324,11 +324,11 @@
                    <p class="symbol">K</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[18].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[18].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[18].element.number}}</p>
                 </div>
             </div>
 
@@ -337,11 +337,11 @@
                    <p class="symbol">Ca</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[19].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[19].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[19].element.number}}</p>
                 </div>
             </div>
 
@@ -355,11 +355,11 @@
                     <h4 class="col-label">3B</h4>
                 </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[20].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[20].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[20].element.number}}</p>
                 </div>
             </div>
 
@@ -373,11 +373,11 @@
                     <h4 class="col-label">4B</h4>
                 </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[21].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[21].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[21].element.number}}</p>
                 </div>
             </div>
 
@@ -391,11 +391,11 @@
                     <h4 class="col-label">5B</h4>
                 </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[22].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[22].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[22].element.number}}</p>
                 </div>
             </div>
 
@@ -409,11 +409,11 @@
                     <h4 class="col-label">6B</h4>
                 </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[23].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[23].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[23].element.number}}</p>
                 </div>
             </div>
 
@@ -427,11 +427,11 @@
                     <h4 class="col-label">7B</h4>
                 </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[24].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[24].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[24].element.number}}</p>
                 </div>
             </div>
 
@@ -445,11 +445,11 @@
                     <h4 class="col-label">8B</h4>
                 </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[25].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[25].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[25].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-8">
@@ -462,11 +462,11 @@
                     <h4 class="col-label">9B</h4>
                 </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[26].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[26].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[26].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-8">
@@ -479,11 +479,11 @@
                     <h4 class="col-label">10B</h4>
                 </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[27].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[27].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[27].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-8">
@@ -496,11 +496,11 @@
                     <h4 class="col-label">11B</h4>
                 </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[28].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[28].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[28].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-8">
@@ -513,11 +513,11 @@
                     <h4 class="col-label">12B</h4>
                 </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[29].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[29].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[29].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-5">
@@ -525,11 +525,11 @@
                    <p class="symbol">Ga</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[30].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[30].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[30].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-6">
@@ -537,11 +537,11 @@
                    <p class="symbol">Ge</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[31].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[31].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[31].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-6">
@@ -549,11 +549,11 @@
                    <p class="symbol">As</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[32].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[32].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[32].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-1">
@@ -561,11 +561,11 @@
                    <p class="symbol">Se</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[33].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[33].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[33].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-7">
@@ -573,11 +573,11 @@
                    <p class="symbol">Br</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[34].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[34].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[34].element.number}}</p>
                 </div>
             </div>
             <div class="span1-last pt-box pt-box-2">
@@ -585,11 +585,11 @@
                    <p class="symbol">Kr</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[35].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[35].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[35].element.number}}</p>
                 </div>
             </div>
             <!--row-4-->
@@ -605,11 +605,11 @@
                    <p class="symbol">Rb</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[36].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[36].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[36].element.number}}</p>
                 </div>
             </div>
 
@@ -618,11 +618,11 @@
                    <p class="symbol">Sr</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[37].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[37].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[37].element.number}}</p>
                 </div>
             </div>
 
@@ -631,11 +631,11 @@
                    <p class="symbol">Y</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[38].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[38].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[38].element.number}}</p>
                 </div>
             </div>
 
@@ -644,11 +644,11 @@
                    <p class="symbol">Zr</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[39].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[39].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[39].element.number}}</p>
                 </div>
             </div>
 
@@ -657,11 +657,11 @@
                    <p class="symbol">Nb</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[40].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[40].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[40].element.number}}</p>
                 </div>
             </div>
 
@@ -670,11 +670,11 @@
                    <p class="symbol">Mo</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[41].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[41].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[41].element.number}}</p>
                 </div>
             </div>
 
@@ -683,11 +683,11 @@
                    <p class="symbol">Tc</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[42].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[42].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[42].element.number}}</p>
                 </div>
             </div>
 
@@ -696,11 +696,11 @@
                    <p class="symbol">Ru</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[43].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[43].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[43].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-8">
@@ -708,11 +708,11 @@
                    <p class="symbol">Rh</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[44].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[44].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[44].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-8">
@@ -720,11 +720,11 @@
                    <p class="symbol">Pd</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[45].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[45].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[45].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-8">
@@ -732,11 +732,11 @@
                    <p class="symbol">Ag</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[46].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[46].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[46].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-8">
@@ -744,11 +744,11 @@
                    <p class="symbol">Cd</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[47].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[47].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[47].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-5">
@@ -756,11 +756,11 @@
                    <p class="symbol">In</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[48].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[48].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[48].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-5">
@@ -768,11 +768,11 @@
                    <p class="symbol">Sn</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[49].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[49].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[49].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-6">
@@ -780,11 +780,11 @@
                    <p class="symbol">Sb</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[50].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[50].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[50].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-6">
@@ -792,11 +792,11 @@
                    <p class="symbol">Te</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[51].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[51].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[51].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-7">
@@ -804,11 +804,11 @@
                    <p class="symbol">I</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[52].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[52].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[52].element.number}}</p>
                 </div>
             </div>
             <div class="span1-last pt-box pt-box-2">
@@ -816,11 +816,11 @@
                    <p class="symbol">Xe</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[53].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[53].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[53].element.number}}</p>
                 </div>
             </div>
             <!--row-5-->
@@ -836,11 +836,11 @@
                    <p class="symbol">Cs</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[54].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[54].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[54].element.number}}</p>
                 </div>
             </div>
 
@@ -849,20 +849,21 @@
                    <p class="symbol">Ba</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[55].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[55].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[55].element.number}}</p>
                 </div>
             </div>
 
             <div class="span1 pt-box pt-box-9">
-                <div class="name-label-wrapper">
-                    <p class="name lan">La-Lu</p>
-                </div>
+                
                 <div class="number-label-wrapper">
                     <p class="number lan">57-71</p>
+                </div>
+                <div class="name-label-wrapper">
+                    <p class="name lan">La-Lu</p>
                 </div>
             </div>
 
@@ -871,11 +872,11 @@
                    <p class="symbol">Hf</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[57].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[57].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[57].element.number}}</p>
                 </div>
             </div>
 
@@ -884,11 +885,11 @@
                    <p class="symbol">Ta</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[58].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[58].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[58].element.number}}</p>
                 </div>
             </div>
 
@@ -897,11 +898,11 @@
                    <p class="symbol">W</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[59].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[59].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[59].element.number}}</p>
                 </div>
             </div>
 
@@ -910,11 +911,11 @@
                    <p class="symbol">Re</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[60].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[60].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[60].element.number}}</p>
                 </div>
             </div>
 
@@ -923,11 +924,11 @@
                    <p class="symbol">Os</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[61].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[61].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[61].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-8">
@@ -935,11 +936,11 @@
                    <p class="symbol">Ir</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[62].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[62].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[62].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-8">
@@ -947,11 +948,11 @@
                    <p class="symbol">Pt</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[63].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[63].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[63].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-8">
@@ -959,11 +960,11 @@
                    <p class="symbol">Au</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[64].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[64].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[64].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-8">
@@ -971,11 +972,11 @@
                    <p class="symbol">Hg</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[65].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[65].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[65].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-5">
@@ -983,11 +984,11 @@
                    <p class="symbol">Tl</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[66].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[66].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[66].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-5">
@@ -995,11 +996,11 @@
                    <p class="symbol">Pb</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[67].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[67].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[67].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-5">
@@ -1007,11 +1008,11 @@
                    <p class="symbol">Bi</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[68].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[68].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[68].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-6">
@@ -1019,11 +1020,11 @@
                    <p class="symbol">Po</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[69].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[69].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[69].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-7">
@@ -1031,11 +1032,11 @@
                    <p class="symbol">At</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[70].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[70].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[70].element.number}}</p>
                 </div>
             </div>
             <div class="span1-last pt-box pt-box-2">
@@ -1043,11 +1044,11 @@
                    <p class="symbol">Rn</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[71].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[71].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[71].element.number}}</p>
                 </div>
             </div>
             <!--row-6-->
@@ -1062,11 +1063,11 @@
                    <p class="symbol">Fr</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[72].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[72].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[72].element.number}}</p>
                 </div>
             </div>
 
@@ -1075,20 +1076,21 @@
                    <p class="symbol">Ra</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[73].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[73].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[73].element.number}}</p>
                 </div>
             </div>
 
             <div class="span1 pt-box pt-box-10">
-                <div class="name-label-wrapper">
-                    <p class="name lan">Ac-Lr</p>
-                </div>
+               
                 <div class="number-label-wrapper">
                     <p class="number lan">89-103</p>
+                </div>
+                 <div class="name-label-wrapper">
+                    <p class="name lan">Ac-Lr</p>
                 </div>
             </div>
 
@@ -1097,11 +1099,11 @@
                    <p class="symbol">Rf</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[75].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[75].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[75].element.number}}</p>
                 </div>
             </div>
 
@@ -1110,11 +1112,11 @@
                    <p class="symbol">Db</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[76].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[76].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[76].element.number}}</p>
                 </div>
             </div>
 
@@ -1123,11 +1125,11 @@
                    <p class="symbol">Sg</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[77].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[77].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[77].element.number}}</p>
                 </div>
             </div>
 
@@ -1136,11 +1138,11 @@
                    <p class="symbol">Bh</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[78].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[78].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[78].element.number}}</p>
                 </div>
             </div>
 
@@ -1149,11 +1151,11 @@
                    <p class="symbol">Hs</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[79].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[79].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[79].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-8">
@@ -1161,11 +1163,11 @@
                    <p class="symbol">Mt</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[80].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[80].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[80].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-8">
@@ -1173,11 +1175,11 @@
                    <p class="symbol">Ds</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[81].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[81].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[81].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-8">
@@ -1185,11 +1187,11 @@
                    <p class="symbol">Rg</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[82].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[82].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[82].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-8">
@@ -1197,11 +1199,11 @@
                    <p class="symbol">Cn</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[83].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[83].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[83].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-5">
@@ -1209,11 +1211,11 @@
                    <p class="symbol">Uut</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[84].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[84].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[84].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-5">
@@ -1221,11 +1223,11 @@
                    <p class="symbol">Fl</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[85].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[85].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[85].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-5">
@@ -1233,11 +1235,11 @@
                    <p class="symbol">Uup</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[86].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[86].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[86].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-5">
@@ -1245,11 +1247,11 @@
                    <p class="symbol">Lv</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[87].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[87].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[87].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-7">
@@ -1257,11 +1259,11 @@
                    <p class="symbol">Uus</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[88].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[88].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[88].element.number}}</p>
                 </div>
             </div>
             <div class="span1-last pt-box pt-box-2">
@@ -1269,11 +1271,11 @@
                    <p class="symbol">Uuo</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[89].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[89].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[89].element.number}}</p>
                 </div>
             </div>
             <!--row-7-->
@@ -1292,11 +1294,11 @@
                    <p class="symbol">La</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[90].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[90].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[90].element.number}}</p>
                 </div>
             </div>
 
@@ -1305,11 +1307,11 @@
                    <p class="symbol">Ce</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[91].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[91].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[91].element.number}}</p>
                 </div>
             </div>
 
@@ -1318,11 +1320,11 @@
                    <p class="symbol">Pr</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[92].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[92].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[92].element.number}}</p>
                 </div>
             </div>
 
@@ -1331,11 +1333,11 @@
                    <p class="symbol">Nd</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[93].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[93].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[93].element.number}}</p>
                 </div>
             </div>
 
@@ -1344,11 +1346,11 @@
                    <p class="symbol">Pm</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[94].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[94].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[94].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-9">
@@ -1356,11 +1358,11 @@
                    <p class="symbol">Sm</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[95].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[95].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[95].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-9">
@@ -1368,11 +1370,11 @@
                    <p class="symbol">Eu</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[96].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[96].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[96].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-9">
@@ -1380,11 +1382,11 @@
                    <p class="symbol">Gd</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[97].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[97].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[97].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-9">
@@ -1392,11 +1394,11 @@
                    <p class="symbol">Tb</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[98].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[98].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[98].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-9">
@@ -1404,11 +1406,11 @@
                    <p class="symbol">Dy</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[99].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[99].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[99].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-9">
@@ -1416,11 +1418,11 @@
                    <p class="symbol">Ho</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[100].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[100].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[100].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-9">
@@ -1428,11 +1430,11 @@
                    <p class="symbol">Er</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[101].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[101].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[101].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-9">
@@ -1440,11 +1442,11 @@
                    <p class="symbol">Tm</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[102].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[102].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[102].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-9">
@@ -1452,11 +1454,11 @@
                    <p class="symbol">Yb</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[103].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[103].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[103].element.number}}</p>
                 </div>
             </div>
             <div class="span1-last pt-box pt-box-9">
@@ -1464,11 +1466,11 @@
                    <p class="symbol">Lu</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[104].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[104].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[104].element.number}}</p>
                 </div>
             </div>
             <!--row-lan-->
@@ -1484,11 +1486,11 @@
                    <p class="symbol">Ac</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[105].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[105].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[105].element.number}}</p>
                 </div>
             </div>
 
@@ -1497,11 +1499,11 @@
                    <p class="symbol">Th</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[106].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[106].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[106].element.number}}</p>
                 </div>
             </div>
 
@@ -1510,11 +1512,11 @@
                    <p class="symbol">Pa</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[107].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[107].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[107].element.number}}</p>
                 </div>
             </div>
 
@@ -1523,11 +1525,11 @@
                    <p class="symbol">U</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[108].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[108].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[108].element.number}}</p>
                 </div>
             </div>
 
@@ -1536,11 +1538,11 @@
                    <p class="symbol">Np</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[109].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[109].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[109].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-10">
@@ -1548,11 +1550,11 @@
                    <p class="symbol">Pu</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[110].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[110].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[110].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-10">
@@ -1560,11 +1562,11 @@
                    <p class="symbol">Am</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[111].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[111].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[111].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-10">
@@ -1572,11 +1574,11 @@
                    <p class="symbol">Cm</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[112].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[112].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[112].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-10">
@@ -1584,11 +1586,11 @@
                    <p class="symbol">Bk</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[113].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[113].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[113].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-10">
@@ -1596,11 +1598,11 @@
                    <p class="symbol">Cf</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[114].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[114].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[114].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-10">
@@ -1608,11 +1610,11 @@
                    <p class="symbol">Es</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[115].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[115].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[115].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-10">
@@ -1620,11 +1622,11 @@
                    <p class="symbol">Fm</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[116].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[116].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[116].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-10">
@@ -1632,11 +1634,11 @@
                    <p class="symbol">Md</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[117].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[117].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[117].element.number}}</p>
                 </div>
             </div>
             <div class="span1 pt-box pt-box-10">
@@ -1644,11 +1646,11 @@
                    <p class="symbol">No</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[118].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[118].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[118].element.number}}</p>
                 </div>
             </div>
             <div class="span1-last pt-box pt-box-10">
@@ -1656,11 +1658,11 @@
                    <p class="symbol">Lr</p>
                </div>
                 <div class="name-label-wrapper">
-                    <p class="name">{{name}}</p>
-                    <p class="weight">{{weight}}</p>
+                    <p class="name show-for-large-up">{{ptElements[119].element.name}}</p>
+                    <p class="weight show-for-large-up">{{ptElements[119].element.weight}}</p>
                 </div>
                 <div class="number-label-wrapper">
-                    <p class="number">{{number}}</p>
+                    <p class="number show-for-medium-up">{{ptElements[119].element.number}}</p>
                 </div>
             </div>
             <!--row-lan-->

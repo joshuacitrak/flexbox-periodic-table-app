@@ -76,7 +76,7 @@ app.controller('DataObjectController', function($scope, $rootScope, $http, jsond
                                 });
                         }
                         $scope.ptElements = elements;
-                        //console.log("done ");
+                        console.log($scope.ptElements[2].element.group + " element 0");
                         //dataReady();
                     };//preparedata
                     

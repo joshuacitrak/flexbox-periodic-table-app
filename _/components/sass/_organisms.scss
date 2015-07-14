@@ -53,11 +53,11 @@
 }
 
 header {
-    margin: $margin-lg-px $margin-sm-px;
-    margin: $margin-lg-rem $margin-sm-rem;
+    margin:$margin-sm-px;
+    margin: $margin-sm-rem;
     @media (min-width: $screen-md) {
-        margin: $margin-lg-px $margin-lg-px;
-        margin: $margin-lg-rem $margin-lg-rem;
+        margin: $margin-sm-px $margin-lg-px;
+        margin: $margin-sm-rem $margin-lg-rem;
     }
     .title {
         font-size: 30px;
@@ -140,7 +140,7 @@ header {
     .focus-wrapper {
         position: absolute;
         top: 5%;
-        left: 22%;
+        left: 17%;
         z-index: 32;
         .focus-symbol-label-wrapper {
             text-align: center;

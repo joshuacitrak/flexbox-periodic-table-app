@@ -3221,10 +3221,26 @@ button {
   .name-label-wrapper .name,
   .name-label-wrapper .legend-name {
     font-style: italic;
-    font-size: 13px;
-    font-size: 1.3rem;
-    margin-bottom: 12px;
-    margin-bottom: 1.2rem; }
+    font-size: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-bottom: 1rem; }
+    @media (min-width: 1290px) {
+      .name-label-wrapper .name,
+      .name-label-wrapper .legend-name {
+        margin-bottom: 12px;
+        margin-bottom: 1.2rem; } }
+  .name-label-wrapper .lan {
+    margin-top: 43px;
+    padding-bottom: 2px; }
+    @media (min-width: 1028px) {
+      .name-label-wrapper .lan {
+        margin-top: 57px;
+        padding-bottom: 0; } }
+    @media (min-width: 1290px) {
+      .name-label-wrapper .lan {
+        margin-top: 61px;
+        padding-bottom: 0; } }
   .name-label-wrapper .weight,
   .name-label-wrapper .legend-weight {
     font-size: 8px;
@@ -3232,12 +3248,20 @@ button {
 
 .number-label-wrapper {
   position: absolute;
-  top: 4%;
+  top: 6%;
   left: 4%; }
   .number-label-wrapper .number, .number-label-wrapper .legend-number {
     line-height: .8;
-    font-size: 18px;
-    font-size: 1.8rem; }
+    font-size: 12px;
+    font-size: 1.2rem; }
+    @media (min-width: 1028px) {
+      .number-label-wrapper .number, .number-label-wrapper .legend-number {
+        font-size: 15px;
+        font-size: 1.5rem; } }
+    @media (min-width: 1290px) {
+      .number-label-wrapper .number, .number-label-wrapper .legend-number {
+        font-size: 18px;
+        font-size: 1.8rem; } }
 
 .electron-label-wrapper {
   position: absolute;
@@ -3582,12 +3606,12 @@ button {
   transition: all 0.35s ease-in-out; }
 
 header {
-  margin: 48px 24px;
-  margin: 4.8rem 2.4rem; }
+  margin: 24px;
+  margin: 2.4rem; }
   @media (min-width: 1028px) {
     header {
-      margin: 48px 48px;
-      margin: 4.8rem 4.8rem; } }
+      margin: 24px 48px;
+      margin: 2.4rem 4.8rem; } }
   header .title {
     font-size: 30px;
     font-size: 3rem;
@@ -3696,7 +3720,7 @@ header {
   .focus .focus-wrapper {
     position: absolute;
     top: 5%;
-    left: 22%;
+    left: 17%;
     z-index: 32; }
     .focus .focus-wrapper .focus-symbol-label-wrapper {
       text-align: center;
