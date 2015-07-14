@@ -2,12 +2,22 @@
     <section class="focus" ng-controller="EventsController as evtCtrl">
         <div class="focus-wrapper">
             <div class="pt-box-1 focus-box">
-                <p class="focus-atomic-symbol">{{currentElement.symbol}}</p>
-                <p class="focus-atomic-number">{{currentElement.number}}</p>
-                <p class="focus-name">{{currentElement.name}}</p>
-                <p class="focus-atomic-mass">{{currentElement.molar}}</p>
-                <p class="focus-electrons">{{currentElement.electrons}}</p>
-                <p class="focus-group">{{currentElement.group}}</p>
+               <div class="focus-symbol-label-wrapper">
+                    <p class="focus-symbol">{{currentElement.symbol}}</p>
+                </div>
+                <div class="focus-number-label-wrapper">
+                    <p class="focus-number">{{currentElement.number}}</p>
+                </div>
+                <div class="focus-name-label-wrapper">
+                    <p class="focus-name">{{currentElement.name}}</p>
+                    <p class="focus-weight">{{currentElement.molar}}</p>
+                </div>
+                <div class="focus-electrons-label-wrapper">
+                    <p class="focus-electrons">{{currentElement.electrons}}</p>
+                </div>
+                <div class="focus-group-label-wrapper">
+                    <p class="focus-group">Group: {{currentElement.group}}</p>
+                </div>
             </div>
         </div>
 

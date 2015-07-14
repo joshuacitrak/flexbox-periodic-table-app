@@ -140,13 +140,117 @@ header {
     .focus-wrapper {
         position: absolute;
         top: 5%;
-        left: 17%;
+        left: 22%;
         z-index: 32;
-    }
-}
-
-.list-table-wrapper
-{
+        .focus-symbol-label-wrapper {
+            text-align: center;
+            padding-top: 30%;
+            font-size: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            line-height: 1;
+            @media (min-width: $screen-md) {
+                font-size: 27px;
+                font-size: 2.7rem;
+            }
+            @media (min-width: $screen-lg) {
+                font-size: 29px;
+                font-size: 2.9rem;
+            }
+            .focus-symbol {
+                font-size: 20px;
+                font-size: 2rem;
+                font-weight: inherit;
+                @media (min-width: $screen-md) {
+                    font-size: inherit;
+                }
+                @media (min-width: $screen-lg) {
+                    font-size: inherit;
+                }
+            } //focus-symbol
+        } //focus-symbol-label-wrapper
+        .focus-name-label-wrapper {
+            margin: 0 auto;
+            text-align: center;
+            .focus-name, .focus-weight {
+                line-height: .8;
+            }
+            .focus-name {
+                font-style: italic;
+                font-size: 13px;
+                font-size: 1.3rem;
+                margin-bottom: 12px;
+                margin-bottom: 1.2rem;
+                @media (min-width: $screen-lg) {
+                    font-size: 15px;
+                    font-size: 1.5rem;
+                }
+            }
+            .focus-weight {
+                font-size: 8px;
+                font-size: .8rem;
+                @media (min-width: $screen-lg) {
+                    font-size: 11px;
+                    font-size: 1.1rem;
+                }
+            }
+        } //name label wrapper
+        .focus-number-label-wrapper {
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            @media (min-width: $screen-lg) {
+                top: 6%;
+                left: 6%;
+            }
+            .focus-number {
+                line-height: .8;
+                font-size: 13px;
+                font-size: 1.3rem;
+                @media (min-width: $screen-lg) {
+                    font-size: 18px;
+                    font-size: 1.8rem;
+                }
+            }
+        } //number label wrapper
+        .focus-electrons-label-wrapper {
+            .focus-electrons {
+                display: inline-block;
+                width: 10px;
+                font-size: 7px;
+                font-size: .7rem;
+                position: absolute;
+                top: 2px;
+                right: 0;
+                margin-bottom: 0;
+                line-height: 1;
+                @media (min-width: $screen-lg) {
+                    font-size: 10px;
+                    font-size: 1rem;
+                    top: 6px;
+                    right: 2px;
+                }
+            }
+        } //electron-label-wrapper
+        .focus-group-label-wrapper {
+            position: absolute;
+            top: 2px;
+            right: -160px;
+            @media (min-width: $screen-lg) {
+                right: -190px;
+            }
+            .focus-group {
+                font-size: 20px;
+                font-size: 2rem;
+                @media (min-width: $screen-lg) {
+                    font-size: 24px;
+                    font-size: 2.4rem;
+                }
+            } //focus-group
+        } //focus group label wrapper
+    } //focus-wrapper
+} //focus
+.list-table-wrapper {
     margin: $margin-lg-px 0 $margin-lg-px $margin-sm-px;
     margin: $margin-lg-rem 0 $margin-lg-rem $margin-sm-rem;
     @media (min-width: 1028px) {
@@ -154,138 +258,122 @@ header {
         margin: $margin-lg-rem 0 $margin-lg-rem $margin-lg-rem;
     }
     @include container();
-        @media (min-width: $screen-sm) {
-            @include container($screen-sm);
-            margin-right: 0;
-        }
-        @media (min-width: $screen-md) {
-            @include container($screen-md);
-             margin-right: 0;
-        }
-        @media (min-width: $screen-lg) {
-            @include container($screen-lg);
-             margin-right: 0;
-        }
-        @media (min-width: $screen-xl) {
-            @include container($screen-xl);
-             margin-right: 0;
-        }
+    @media (min-width: $screen-sm) {
+        @include container($screen-sm);
+        margin-right: 0;
+    }
+    @media (min-width: $screen-md) {
+        @include container($screen-md);
+        margin-right: 0;
+    }
+    @media (min-width: $screen-lg) {
+        @include container($screen-lg);
+        margin-right: 0;
+    }
+    @media (min-width: $screen-xl) {
+        @include container($screen-xl);
+        margin-right: 0;
+    }
     .list-table {
-    @include inner-table-borders(1px, $ltgrey);
-    @include outer-table-borders(2px, $dkgrey);
-    border-radius: $box-radius;
-    width: 80%;
-    .list-table-header {
-        font-size: 26px;
-        font-size: 2.6rem;
-        line-height: 1;
-    }
-    .list-table-content {
-        font-size: 16px;
-        font-size: 1.6rem;
-        padding: 12px 6.25px; //same as default
-        padding: 1.2rem 0.625rem;
-    }
-} //list-table
-}//list-table-wrapper
-
-.contact
-{
+        @include inner-table-borders(1px, $ltgrey);
+        @include outer-table-borders(2px, $dkgrey);
+        border-radius: $box-radius;
+        width: 80%;
+        .list-table-header {
+            font-size: 26px;
+            font-size: 2.6rem;
+            line-height: 1;
+        }
+        .list-table-content {
+            font-size: 16px;
+            font-size: 1.6rem;
+            padding: 12px 6.25px; //same as default
+            padding: 1.2rem 0.625rem;
+        }
+    } //list-table
+} //list-table-wrapper
+.contact {
     @include clearfix;
-    margin:0 auto;
-    .contact-list
-    {
-        width:258px;
-        margin:0 auto;
-        .contact-list-item
-        {
+    margin: 0 auto;
+    .contact-list {
+        width: 258px;
+        margin: 0 auto;
+        .contact-list-item {
             margin-right: 12px;
-            float:right;
-            width:42px;
-            height:42px;
+            float: right;
+            width: 42px;
+            height: 42px;
             cursor: pointer;
-            
-            &:last-child
-            {
-                margin-right:0;
+            &:last-child {
+                margin-right: 0;
             }
         }
-        .email-item
-        {
+        .email-item {
             @include background(url(../../images/pencil42_lt.svg));
-            &:hover{
+            &:hover {
                 @include background(url(../../images/pencil42_dk.svg));
             }
         }
-        .facebook-item
-        {
+        .facebook-item {
             @include background(url(../../images/facebook29_lt.svg));
-             &:hover{
-                 @include background(url(../../images/facebook29_dk.svg));
-             }
+            &:hover {
+                @include background(url(../../images/facebook29_dk.svg));
+            }
         }
-        .twitter-item
-        {
+        .twitter-item {
             @include background(url(../../images/twitter21_lt.svg));
-            &:hover{
+            &:hover {
                 @include background(url(../../images/twitter21_dk.svg));
             }
         }
-        .linkedin-item
-        {
+        .linkedin-item {
             @include background(url(../../images/linkedin12_lt.svg));
-            &:hover
-            {
-                 @include background(url(../../images/linkedin12_dk.svg));
+            &:hover {
+                @include background(url(../../images/linkedin12_dk.svg));
             }
         }
-        .gplus-item
-        {
+        .gplus-item {
             @include background(url(../../images/google29_lt.svg));
-            &:hover
-            {
+            &:hover {
                 @include background(url(../../images/google29_dk.svg));
             }
         }
     }
     @include container();
-        @media (min-width: $screen-sm) {
-            @include container($screen-sm left);
-        }
-        @media (min-width: $screen-md) {
-            @include container($screen-md center);
-        }
-        @media (min-width: $screen-lg) {
-            @include container($screen-lg center);
-        }
-        @media (min-width: $screen-xl) {
-            @include container($screen-xl center);
-        }
-}//contact
-
-.copyright
-{
-    margin-top:8px;
-     @include container();
-        @media (min-width: $screen-sm) {
-            @include container($screen-sm left);
-        }
-        @media (min-width: $screen-md) {
-            @include container($screen-md center);
-        }
-        @media (min-width: $screen-lg) {
-            @include container($screen-lg center);
-        }
-        @media (min-width: $screen-xl) {
-            @include container($screen-xl center);
-        }
-    p{
-        text-align: center;
-        font-size:11px;
-         line-height: 1.444;
+    @media (min-width: $screen-sm) {
+        @include container($screen-sm left);
     }
-        
-}//copyright
+    @media (min-width: $screen-md) {
+        @include container($screen-md center);
+    }
+    @media (min-width: $screen-lg) {
+        @include container($screen-lg center);
+    }
+    @media (min-width: $screen-xl) {
+        @include container($screen-xl center);
+    }
+} //contact
+.copyright {
+    margin-top: 8px;
+    @include container();
+    @media (min-width: $screen-sm) {
+        @include container($screen-sm left);
+    }
+    @media (min-width: $screen-md) {
+        @include container($screen-md center);
+    }
+    @media (min-width: $screen-lg) {
+        @include container($screen-lg center);
+    }
+    @media (min-width: $screen-xl) {
+        @include container($screen-xl center);
+    }
+    p {
+        text-align: center;
+        font-size: 11px;
+        line-height: 1.444;
+    }
+} //copyright
 /**
 hover effect remove
 **/

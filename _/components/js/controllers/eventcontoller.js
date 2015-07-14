@@ -11,7 +11,7 @@ app.controller('EventsController', function($scope, $rootScope, $http, $routePar
                     $scope.currentElement.number= "00";
                     $scope.currentElement.name = "Fubar";
                     $scope.currentElement.molar = "0.00";
-                    $scope.currentElement.electrons = "[1, 2, 3, 4]"; 
+                    $scope.currentElement.electrons = "1, 2, 3, 4"; 
                     $scope.currentElement.group = "FB Group";
                     
                     function clickHandler(evt){
