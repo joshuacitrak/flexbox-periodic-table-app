@@ -1,5 +1,5 @@
 <!--focus-->
-    <section class="focus" ng-controller="EventsController as evtCtrl">
+    <section class="focus" ng-controller="EventsController">
         <div class="focus-wrapper">
             <div class="pt-box-1 focus-box">
                <div class="focus-symbol-label-wrapper">
@@ -16,10 +16,12 @@
                     <p class="focus-electrons">{{currentElement.electrons}}</p>
                 </div>
                 <div class="focus-group-label-wrapper">
-                    <p class="focus-group">Group: {{currentElement.group}}</p>
+                    <p class="focus-group">Group: <br><a ng-href="{{currentElement.url}}" target="_blank">{{currentElement.group}}</a></p>
                 </div>
             </div>
         </div>
+        
+        <!--key-->
 
     </section>
     <!--focus-->
@@ -28,7 +30,7 @@
         <div class="pt-content">
             <!--row 1-->
             <h4 class="row-label">1</h4>
-            <div class="span1 pt-box pt-box-1">
+            <div class="span1 pt-box pt-box-1" data-element="{{ptElements[0].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">H</p>
                </div>
@@ -46,7 +48,7 @@
                 </div>
             </div>
 
-            <div class="span1-last pt-box pt-box-2">
+            <div class="span1-last pt-box pt-box-2" data-element="{{ptElements[1].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">He</p>
                </div>
@@ -69,7 +71,7 @@
         <!-- row-2 -->
         <div class="pt-content">
             <h4 class="row-label">2</h4>
-            <div class="span1 pt-box pt-box-3">
+            <div class="span1 pt-box pt-box-3" data-element="{{ptElements[2].element}}">
               <div class="symbol-label-wrapper">
                    <p class="symbol">Li</p>
                </div>
@@ -82,7 +84,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-4">
+            <div class="span1 pt-box pt-box-4" data-element="{{ptElements[3].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">Be</p>
                </div>
@@ -100,7 +102,7 @@
                 </div>
             </div>
 
-            <div class="span1 push10 pt-box pt-box-6">
+            <div class="span1 push10 pt-box pt-box-6" data-element="{{ptElements[4].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">B</p>
                </div>
@@ -118,7 +120,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-1">
+            <div class="span1 pt-box pt-box-1" data-element="{{ptElements[5].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">C</p>
                </div>
@@ -135,7 +137,7 @@
                     <p class="number show-for-medium-up">{{ptElements[5].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-1">
+            <div class="span1 pt-box pt-box-1" data-element="{{ptElements[6].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">N</p>
                </div>
@@ -153,7 +155,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-1">
+            <div class="span1 pt-box pt-box-1" data-element="{{ptElements[7].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">O</p>
                </div>
@@ -171,7 +173,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-7">
+            <div class="span1 pt-box pt-box-7" data-element="{{ptElements[8].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">F</p>
                </div>
@@ -188,7 +190,7 @@
                     <p class="number show-for-medium-up">{{ptElements[8].element.number}}</p>
                 </div>
             </div>
-            <div class="span1-last pt-box pt-box-2">
+            <div class="span1-last pt-box pt-box-2" data-element="{{ptElements[9].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">Ne</p>
                </div>
@@ -208,7 +210,7 @@
         <!-- row-3 -->
         <div class="pt-content">
             <h4 class="row-label">3</h4>
-            <div class="span1 pt-box pt-box-3">
+            <div class="span1 pt-box pt-box-3" data-element="{{ptElements[10].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">Na</p>
                </div>
@@ -221,7 +223,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-4">
+            <div class="span1 pt-box pt-box-4" data-element="{{ptElements[11].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">Mg</p>
                </div>
@@ -234,7 +236,7 @@
                 </div>
             </div>
 
-            <div class="span1 push10  pt-box pt-box-5">
+            <div class="span1 push10  pt-box pt-box-5" data-element="{{ptElements[12].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">Al</p>
                </div>
@@ -247,7 +249,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-6">
+            <div class="span1 pt-box pt-box-6" data-element="{{ptElements[13].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">Si</p>
                </div>
@@ -260,7 +262,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-1">
+            <div class="span1 pt-box pt-box-1" data-element="{{ptElements[14].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">P</p>
                </div>
@@ -273,7 +275,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-1">
+            <div class="span1 pt-box pt-box-1" data-element="{{ptElements[15].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">S</p>
                </div>
@@ -286,7 +288,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-7">
+            <div class="span1 pt-box pt-box-7" data-element="{{ptElements[16].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">Cl</p>
                </div>
@@ -299,7 +301,7 @@
                 </div>
             </div>
 
-            <div class="span1-last pt-box pt-box-2">
+            <div class="span1-last pt-box pt-box-2" data-element="{{ptElements[17].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">Ar</p>
                </div>
@@ -319,7 +321,7 @@
         <!-- row-4 -->
         <div class="pt-content">
             <h4 class="row-label">4</h4>
-            <div class="span1 pt-box pt-box-3">
+            <div class="span1 pt-box pt-box-3" data-element="{{ptElements[18].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">K</p>
                </div>
@@ -332,7 +334,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-4">
+            <div class="span1 pt-box pt-box-4" data-element="{{ptElements[19].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">Ca</p>
                </div>
@@ -345,7 +347,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[20].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">Sc</p>
                </div>
@@ -363,7 +365,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[21].element}}">
                 <div class="symbol-label-wrapper">
                    <p class="symbol">Ti</p>
                </div>
@@ -381,7 +383,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[22].element}}">
                  <div class="symbol-label-wrapper">
                    <p class="symbol">V</p>
                </div>
@@ -399,7 +401,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[23].element}}">
                  <div class="symbol-label-wrapper">
                    <p class="symbol">Cr</p>
                </div>
@@ -417,7 +419,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[24].element}}">
                  <div class="symbol-label-wrapper">
                    <p class="symbol">Mn</p>
                </div>
@@ -435,7 +437,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[25].element}}">
                  <div class="symbol-label-wrapper">
                    <p class="symbol">Fe</p>
                </div>
@@ -452,7 +454,7 @@
                     <p class="number show-for-medium-up">{{ptElements[25].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[26].element}}">
                  <div class="symbol-label-wrapper">
                    <p class="symbol">Co</p>
                </div>
@@ -469,7 +471,7 @@
                     <p class="number show-for-medium-up">{{ptElements[26].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[27].element}}">
                  <div class="symbol-label-wrapper">
                    <p class="symbol">Ni</p>
                </div>
@@ -486,7 +488,7 @@
                     <p class="number show-for-medium-up">{{ptElements[27].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[28].element}}">
                  <div class="symbol-label-wrapper">
                    <p class="symbol">Cu</p>
                </div>
@@ -503,7 +505,7 @@
                     <p class="number show-for-medium-up">{{ptElements[28].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[29].element}}">
                  <div class="symbol-label-wrapper">
                    <p class="symbol">Zn</p>
                </div>
@@ -520,7 +522,7 @@
                     <p class="number show-for-medium-up">{{ptElements[29].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-5">
+            <div class="span1 pt-box pt-box-5" data-element="{{ptElements[30].element}}">
                  <div class="symbol-label-wrapper">
                    <p class="symbol">Ga</p>
                </div>
@@ -544,7 +546,7 @@
                     <p class="number show-for-medium-up">{{ptElements[31].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-6">
+            <div class="span1 pt-box pt-box-6" data-element="{{ptElements[32].element}}">
                  <div class="symbol-label-wrapper">
                    <p class="symbol">As</p>
                </div>
@@ -556,7 +558,7 @@
                     <p class="number show-for-medium-up">{{ptElements[32].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-1">
+            <div class="span1 pt-box pt-box-1" data-element="{{ptElements[33].element}}">
                  <div class="symbol-label-wrapper">
                    <p class="symbol">Se</p>
                </div>
@@ -568,7 +570,7 @@
                     <p class="number show-for-medium-up">{{ptElements[33].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-7">
+            <div class="span1 pt-box pt-box-7" data-element="{{ptElements[34].element}}">
                  <div class="symbol-label-wrapper">
                    <p class="symbol">Br</p>
                </div>
@@ -580,7 +582,7 @@
                     <p class="number show-for-medium-up">{{ptElements[34].element.number}}</p>
                 </div>
             </div>
-            <div class="span1-last pt-box pt-box-2">
+            <div class="span1-last pt-box pt-box-2" data-element="{{ptElements[35].element}}">
                  <div class="symbol-label-wrapper">
                    <p class="symbol">Kr</p>
                </div>
@@ -600,7 +602,7 @@
  <!-- row-5 -->
         <div class="pt-content">
             <h4 class="row-label">5</h4>
-            <div class="span1 pt-box pt-box-3">
+            <div class="span1 pt-box pt-box-3" data-element="{{ptElements[36].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Rb</p>
                </div>
@@ -613,7 +615,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-4">
+            <div class="span1 pt-box pt-box-4" data-element="{{ptElements[37].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Sr</p>
                </div>
@@ -626,7 +628,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[38].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Y</p>
                </div>
@@ -639,7 +641,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[39].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Zr</p>
                </div>
@@ -652,7 +654,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[40].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Nb</p>
                </div>
@@ -665,7 +667,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[41].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Mo</p>
                </div>
@@ -678,7 +680,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[42].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Tc</p>
                </div>
@@ -691,7 +693,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[43].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Ru</p>
                </div>
@@ -703,7 +705,7 @@
                     <p class="number show-for-medium-up">{{ptElements[43].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[44].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Rh</p>
                </div>
@@ -715,7 +717,7 @@
                     <p class="number show-for-medium-up">{{ptElements[44].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[45].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Pd</p>
                </div>
@@ -727,7 +729,7 @@
                     <p class="number show-for-medium-up">{{ptElements[45].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[46].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Ag</p>
                </div>
@@ -739,7 +741,7 @@
                     <p class="number show-for-medium-up">{{ptElements[46].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[47].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Cd</p>
                </div>
@@ -751,7 +753,7 @@
                     <p class="number show-for-medium-up">{{ptElements[47].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-5">
+            <div class="span1 pt-box pt-box-5" data-element="{{ptElements[48].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">In</p>
                </div>
@@ -763,7 +765,7 @@
                     <p class="number show-for-medium-up">{{ptElements[48].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-5">
+            <div class="span1 pt-box pt-box-5" data-element="{{ptElements[49].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Sn</p>
                </div>
@@ -775,7 +777,7 @@
                     <p class="number show-for-medium-up">{{ptElements[49].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-6">
+            <div class="span1 pt-box pt-box-6" data-element="{{ptElements[50].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Sb</p>
                </div>
@@ -787,7 +789,7 @@
                     <p class="number show-for-medium-up">{{ptElements[50].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-6">
+            <div class="span1 pt-box pt-box-6" data-element="{{ptElements[51].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Te</p>
                </div>
@@ -799,7 +801,7 @@
                     <p class="number show-for-medium-up">{{ptElements[51].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-7">
+            <div class="span1 pt-box pt-box-7" data-element="{{ptElements[52].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">I</p>
                </div>
@@ -811,7 +813,7 @@
                     <p class="number show-for-medium-up">{{ptElements[52].element.number}}</p>
                 </div>
             </div>
-            <div class="span1-last pt-box pt-box-2">
+            <div class="span1-last pt-box pt-box-2" data-element="{{ptElements[53].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Xe</p>
                </div>
@@ -831,7 +833,7 @@
 <!-- row-6 -->
         <div class="pt-content">
             <h4 class="row-label">6</h4>
-            <div class="span1 pt-box pt-box-3">
+            <div class="span1 pt-box pt-box-3" data-element="{{ptElements[54].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Cs</p>
                </div>
@@ -844,7 +846,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-4">
+            <div class="span1 pt-box pt-box-4" data-element="{{ptElements[55].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Ba</p>
                </div>
@@ -857,7 +859,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-9">
+            <div class="span1 pt-box pt-box-9" data-element="{{ptElements[56].element}}">
                 
                 <div class="number-label-wrapper">
                     <p class="number lan">57-71</p>
@@ -867,7 +869,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[57].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Hf</p>
                </div>
@@ -880,7 +882,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[58].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Ta</p>
                </div>
@@ -893,7 +895,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[59].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">W</p>
                </div>
@@ -906,7 +908,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[60].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Re</p>
                </div>
@@ -919,7 +921,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[61].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Os</p>
                </div>
@@ -931,7 +933,7 @@
                     <p class="number show-for-medium-up">{{ptElements[61].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[62].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Ir</p>
                </div>
@@ -943,7 +945,7 @@
                     <p class="number show-for-medium-up">{{ptElements[62].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[63].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Pt</p>
                </div>
@@ -955,7 +957,7 @@
                     <p class="number show-for-medium-up">{{ptElements[63].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[64].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Au</p>
                </div>
@@ -967,7 +969,7 @@
                     <p class="number show-for-medium-up">{{ptElements[64].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[65].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Hg</p>
                </div>
@@ -979,7 +981,7 @@
                     <p class="number show-for-medium-up">{{ptElements[65].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-5">
+            <div class="span1 pt-box pt-box-5" data-element="{{ptElements[66].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Tl</p>
                </div>
@@ -991,7 +993,7 @@
                     <p class="number show-for-medium-up">{{ptElements[66].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-5">
+            <div class="span1 pt-box pt-box-5" data-element="{{ptElements[67].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Pb</p>
                </div>
@@ -1003,7 +1005,7 @@
                     <p class="number show-for-medium-up">{{ptElements[67].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-5">
+            <div class="span1 pt-box pt-box-5" data-element="{{ptElements[68].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Bi</p>
                </div>
@@ -1015,7 +1017,7 @@
                     <p class="number show-for-medium-up">{{ptElements[68].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-6">
+            <div class="span1 pt-box pt-box-6" data-element="{{ptElements[69].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Po</p>
                </div>
@@ -1027,7 +1029,7 @@
                     <p class="number show-for-medium-up">{{ptElements[69].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-7">
+            <div class="span1 pt-box pt-box-7" data-element="{{ptElements[70].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">At</p>
                </div>
@@ -1039,7 +1041,7 @@
                     <p class="number show-for-medium-up">{{ptElements[70].element.number}}</p>
                 </div>
             </div>
-            <div class="span1-last pt-box pt-box-2">
+            <div class="span1-last pt-box pt-box-2" data-element="{{ptElements[71].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Rn</p>
                </div>
@@ -1058,7 +1060,7 @@
 <!-- row-7 -->
         <div class="pt-content">
             <h4 class="row-label">7</h4>
-            <div class="span1 pt-box pt-box-3">
+            <div class="span1 pt-box pt-box-3" data-element="{{ptElements[72].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Fr</p>
                </div>
@@ -1071,7 +1073,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-4">
+            <div class="span1 pt-box pt-box-4" data-element="{{ptElements[73].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Ra</p>
                </div>
@@ -1084,7 +1086,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-10">
+            <div class="span1 pt-box pt-box-10" data-element="{{ptElements[74].element}}">
                
                 <div class="number-label-wrapper">
                     <p class="number lan">89-103</p>
@@ -1094,7 +1096,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[75].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Rf</p>
                </div>
@@ -1107,7 +1109,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[76].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Db</p>
                </div>
@@ -1120,7 +1122,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[77].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Sg</p>
                </div>
@@ -1133,7 +1135,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[78].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Bh</p>
                </div>
@@ -1146,7 +1148,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[79].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Hs</p>
                </div>
@@ -1158,7 +1160,7 @@
                     <p class="number show-for-medium-up">{{ptElements[79].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[80].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Mt</p>
                </div>
@@ -1170,7 +1172,7 @@
                     <p class="number show-for-medium-up">{{ptElements[80].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[81].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Ds</p>
                </div>
@@ -1182,7 +1184,7 @@
                     <p class="number show-for-medium-up">{{ptElements[81].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[82].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Rg</p>
                </div>
@@ -1194,7 +1196,7 @@
                     <p class="number show-for-medium-up">{{ptElements[82].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-8">
+            <div class="span1 pt-box pt-box-8" data-element="{{ptElements[83].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Cn</p>
                </div>
@@ -1206,7 +1208,7 @@
                     <p class="number show-for-medium-up">{{ptElements[83].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-5">
+            <div class="span1 pt-box pt-box-5" data-element="{{ptElements[84].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Uut</p>
                </div>
@@ -1218,7 +1220,7 @@
                     <p class="number show-for-medium-up">{{ptElements[84].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-5">
+            <div class="span1 pt-box pt-box-5" data-element="{{ptElements[85].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Fl</p>
                </div>
@@ -1230,7 +1232,7 @@
                     <p class="number show-for-medium-up">{{ptElements[85].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-5">
+            <div class="span1 pt-box pt-box-5" data-element="{{ptElements[86].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Uup</p>
                </div>
@@ -1242,7 +1244,7 @@
                     <p class="number show-for-medium-up">{{ptElements[86].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-5">
+            <div class="span1 pt-box pt-box-5" data-element="{{ptElements[87].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Lv</p>
                </div>
@@ -1254,7 +1256,7 @@
                     <p class="number show-for-medium-up">{{ptElements[87].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-7">
+            <div class="span1 pt-box pt-box-7" data-element="{{ptElements[88].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Uus</p>
                </div>
@@ -1266,7 +1268,7 @@
                     <p class="number show-for-medium-up">{{ptElements[88].element.number}}</p>
                 </div>
             </div>
-            <div class="span1-last pt-box pt-box-2">
+            <div class="span1-last pt-box pt-box-2" data-element="{{ptElements[89].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Uuo</p>
                </div>
@@ -1289,7 +1291,7 @@
         
         <div class="pt-content">
             <h4 class="row-label">6</h4>
-            <div class="span1 push3 pt-box pt-box-9">
+            <div class="span1 push3 pt-box pt-box-9" data-element="{{ptElements[90].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">La</p>
                </div>
@@ -1302,7 +1304,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-9">
+            <div class="span1 pt-box pt-box-9" data-element="{{ptElements[91].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Ce</p>
                </div>
@@ -1315,7 +1317,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-9">
+            <div class="span1 pt-box pt-box-9" data-element="{{ptElements[92].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Pr</p>
                </div>
@@ -1328,7 +1330,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-9">
+            <div class="span1 pt-box pt-box-9" data-element="{{ptElements[93].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Nd</p>
                </div>
@@ -1341,7 +1343,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-9">
+            <div class="span1 pt-box pt-box-9" data-element="{{ptElements[94].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Pm</p>
                </div>
@@ -1353,7 +1355,7 @@
                     <p class="number show-for-medium-up">{{ptElements[94].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-9">
+            <div class="span1 pt-box pt-box-9" data-element="{{ptElements[95].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Sm</p>
                </div>
@@ -1365,7 +1367,7 @@
                     <p class="number show-for-medium-up">{{ptElements[95].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-9">
+            <div class="span1 pt-box pt-box-9" data-element="{{ptElements[96].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Eu</p>
                </div>
@@ -1377,7 +1379,7 @@
                     <p class="number show-for-medium-up">{{ptElements[96].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-9">
+            <div class="span1 pt-box pt-box-9" data-element="{{ptElements[97].element}}">
                   <div class="symbol-label-wrapper">
                    <p class="symbol">Gd</p>
                </div>
@@ -1389,7 +1391,7 @@
                     <p class="number show-for-medium-up">{{ptElements[97].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-9">
+            <div class="span1 pt-box pt-box-9" data-element="{{ptElements[98].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Tb</p>
                </div>
@@ -1401,7 +1403,7 @@
                     <p class="number show-for-medium-up">{{ptElements[98].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-9">
+            <div class="span1 pt-box pt-box-9" data-element="{{ptElements[99].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Dy</p>
                </div>
@@ -1413,7 +1415,7 @@
                     <p class="number show-for-medium-up">{{ptElements[99].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-9">
+            <div class="span1 pt-box pt-box-9" data-element="{{ptElements[100].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Ho</p>
                </div>
@@ -1425,7 +1427,7 @@
                     <p class="number show-for-medium-up">{{ptElements[100].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-9">
+            <div class="span1 pt-box pt-box-9" data-element="{{ptElements[101].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Er</p>
                </div>
@@ -1437,7 +1439,7 @@
                     <p class="number show-for-medium-up">{{ptElements[101].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-9">
+            <div class="span1 pt-box pt-box-9" data-element="{{ptElements[102].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Tm</p>
                </div>
@@ -1449,7 +1451,7 @@
                     <p class="number show-for-medium-up">{{ptElements[102].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-9">
+            <div class="span1 pt-box pt-box-9" data-element="{{ptElements[103].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Yb</p>
                </div>
@@ -1461,7 +1463,7 @@
                     <p class="number show-for-medium-up">{{ptElements[103].element.number}}</p>
                 </div>
             </div>
-            <div class="span1-last pt-box pt-box-9">
+            <div class="span1-last pt-box pt-box-9" data-element="{{ptElements[104].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Lu</p>
                </div>
@@ -1481,7 +1483,7 @@
         
         <div class="pt-content">
             <h4 class="row-label">7</h4>
-            <div class="span1 push3 pt-box pt-box-10">
+            <div class="span1 push3 pt-box pt-box-10" data-element="{{ptElements[105].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Ac</p>
                </div>
@@ -1494,7 +1496,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-10">
+            <div class="span1 pt-box pt-box-10" data-element="{{ptElements[106].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Th</p>
                </div>
@@ -1507,7 +1509,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-10">
+            <div class="span1 pt-box pt-box-10" data-element="{{ptElements[107].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Pa</p>
                </div>
@@ -1520,7 +1522,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-10">
+            <div class="span1 pt-box pt-box-10" data-element="{{ptElements[108].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">U</p>
                </div>
@@ -1533,7 +1535,7 @@
                 </div>
             </div>
 
-            <div class="span1 pt-box pt-box-10">
+            <div class="span1 pt-box pt-box-10" data-element="{{ptElements[109].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Np</p>
                </div>
@@ -1545,7 +1547,7 @@
                     <p class="number show-for-medium-up">{{ptElements[109].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-10">
+            <div class="span1 pt-box pt-box-10" data-element="{{ptElements[110].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Pu</p>
                </div>
@@ -1557,7 +1559,7 @@
                     <p class="number show-for-medium-up">{{ptElements[110].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-10">
+            <div class="span1 pt-box pt-box-10" data-element="{{ptElements[111].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Am</p>
                </div>
@@ -1569,7 +1571,7 @@
                     <p class="number show-for-medium-up">{{ptElements[111].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-10">
+            <div class="span1 pt-box pt-box-10" data-element="{{ptElements[112].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Cm</p>
                </div>
@@ -1581,7 +1583,7 @@
                     <p class="number show-for-medium-up">{{ptElements[112].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-10">
+            <div class="span1 pt-box pt-box-10" data-element="{{ptElements[113].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Bk</p>
                </div>
@@ -1593,7 +1595,7 @@
                     <p class="number show-for-medium-up">{{ptElements[113].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-10">
+            <div class="span1 pt-box pt-box-10" data-element="{{ptElements[114].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Cf</p>
                </div>
@@ -1605,7 +1607,7 @@
                     <p class="number show-for-medium-up">{{ptElements[114].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-10">
+            <div class="span1 pt-box pt-box-10" data-element="{{ptElements[115].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Es</p>
                </div>
@@ -1617,7 +1619,7 @@
                     <p class="number show-for-medium-up">{{ptElements[115].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-10">
+            <div class="span1 pt-box pt-box-10" data-element="{{ptElements[116].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Fm</p>
                </div>
@@ -1629,7 +1631,7 @@
                     <p class="number show-for-medium-up">{{ptElements[116].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-10">
+            <div class="span1 pt-box pt-box-10" data-element="{{ptElements[117].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Md</p>
                </div>
@@ -1641,7 +1643,7 @@
                     <p class="number show-for-medium-up">{{ptElements[117].element.number}}</p>
                 </div>
             </div>
-            <div class="span1 pt-box pt-box-10">
+            <div class="span1 pt-box pt-box-10" data-element="{{ptElements[118].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">No</p>
                </div>
@@ -1653,7 +1655,7 @@
                     <p class="number show-for-medium-up">{{ptElements[118].element.number}}</p>
                 </div>
             </div>
-            <div class="span1-last pt-box pt-box-10">
+            <div class="span1-last pt-box pt-box-10" data-element="{{ptElements[119].element}}">
                <div class="symbol-label-wrapper">
                    <p class="symbol">Lr</p>
                </div>

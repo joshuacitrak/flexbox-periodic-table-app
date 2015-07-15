@@ -3236,10 +3236,10 @@ button {
     @media (min-width: 1028px) {
       .name-label-wrapper .lan {
         margin-top: 57px;
-        padding-bottom: 0; } }
+        padding-bottom: 1px; } }
     @media (min-width: 1290px) {
       .name-label-wrapper .lan {
-        margin-top: 61px;
+        margin-top: 63px;
         padding-bottom: 0; } }
   .name-label-wrapper .weight,
   .name-label-wrapper .legend-weight {
@@ -3720,8 +3720,11 @@ header {
   .focus .focus-wrapper {
     position: absolute;
     top: 5%;
-    left: 17%;
+    left: 25%;
     z-index: 32; }
+    .focus .focus-wrapper .focus-box {
+      min-width: 100px;
+      max-width: 105px; }
     .focus .focus-wrapper .focus-symbol-label-wrapper {
       text-align: center;
       padding-top: 30%;
@@ -3792,7 +3795,7 @@ header {
       font-size: .7rem;
       position: absolute;
       top: 2px;
-      right: 0;
+      right: 2px;
       margin-bottom: 0;
       line-height: 1; }
       @media (min-width: 1290px) {
@@ -3800,17 +3803,18 @@ header {
           font-size: 10px;
           font-size: 1rem;
           top: 6px;
-          right: 2px; } }
+          right: 4px; } }
     .focus .focus-wrapper .focus-group-label-wrapper {
       position: absolute;
       top: 2px;
-      right: -160px; }
+      left: 115px; }
       @media (min-width: 1290px) {
         .focus .focus-wrapper .focus-group-label-wrapper {
-          right: -190px; } }
+          left: 130px; } }
       .focus .focus-wrapper .focus-group-label-wrapper .focus-group {
         font-size: 20px;
-        font-size: 2rem; }
+        font-size: 2rem;
+        line-height: 1; }
         @media (min-width: 1290px) {
           .focus .focus-wrapper .focus-group-label-wrapper .focus-group {
             font-size: 24px;

@@ -140,8 +140,13 @@ header {
     .focus-wrapper {
         position: absolute;
         top: 5%;
-        left: 17%;
+        left: 25%;
         z-index: 32;
+        .focus-box
+        {
+            min-width:100px;
+            max-width:105px;
+        }
         .focus-symbol-label-wrapper {
             text-align: center;
             padding-top: 30%;
@@ -221,27 +226,28 @@ header {
                 font-size: .7rem;
                 position: absolute;
                 top: 2px;
-                right: 0;
+                right: 2px;
                 margin-bottom: 0;
                 line-height: 1;
                 @media (min-width: $screen-lg) {
                     font-size: 10px;
                     font-size: 1rem;
                     top: 6px;
-                    right: 2px;
+                    right: 4px;
                 }
             }
         } //electron-label-wrapper
         .focus-group-label-wrapper {
             position: absolute;
             top: 2px;
-            right: -160px;
+            left:115px;
             @media (min-width: $screen-lg) {
-                right: -190px;
+                left:130px;
             }
             .focus-group {
                 font-size: 20px;
                 font-size: 2rem;
+                line-height:1;
                 @media (min-width: $screen-lg) {
                     font-size: 24px;
                     font-size: 2.4rem;
